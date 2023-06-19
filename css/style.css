@@ -300,10 +300,6 @@ footer .text-content {
 }
 
 @media (max-width: 1199px) {
-  h1 {
-    font-size: 34px !important;
-    line-height: 37px;
-  }
   .banner-background {
     height: 100%;
     width: 51% !important;
@@ -315,6 +311,34 @@ footer .text-content {
 
   .tools-images {
     width: 100%;
+  }
+}
+
+@media (max-width: 1111px) {
+  .header-background-top, .header-background-bottom {
+    min-height: 73.8px !important;
+  }
+}
+
+@media (max-width: 1098px) {
+  h1 {
+    font-size: 34px !important;
+  }
+
+  .header-download-button {
+    bottom: 25px;
+}
+}
+
+@media (max-width: 1090px) {
+  .header-download-button {
+    bottom: 18px;
+  }
+}
+
+@media (max-width: 1078px) {
+  .header-download-button {
+    bottom: 16px;
   }
 }
 
