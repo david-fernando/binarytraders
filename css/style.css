@@ -377,11 +377,23 @@ footer .text-content {
   }
 }
 
+@media (max-width: 797px) {
+  .header-nav {
+    width: 90% !important;
+  }
+}
+
 @media (max-width: 886px) {
   .navbar {
     width: max-content;
     position: relative;
     right: 5.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills-content > .container {
+    min-width: min-content;
   }
 }
 
