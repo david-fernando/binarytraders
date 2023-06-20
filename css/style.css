@@ -408,6 +408,12 @@ footer .text-content {
   }
 }
 
+@media (max-width: 560px) {
+  .btn-translate > .dropdown > .dropdown-menu {
+    left: -65px;
+  }
+}
+
 @media (max-width: 575px) {
   .navbar {
     width: max-content;
