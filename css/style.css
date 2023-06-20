@@ -265,7 +265,7 @@ footer .text-content {
   bottom: 7px;
 }
 
-.banner-content > .container {
+.mobile-hidden > .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -291,6 +291,15 @@ footer .text-content {
 
 .tools-images {
   width: 92%;
+}
+
+.banner-content {
+  height: min-content !important;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 1400px) {
@@ -349,7 +358,7 @@ footer .text-content {
 }
 
 @media (max-width: 991px) {
-  .banner-content > .container {
+  .mobile-hidden > .container {
     min-width: 960px;
   }
   .header-nav > .container {
