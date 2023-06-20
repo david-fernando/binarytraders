@@ -412,6 +412,10 @@ footer .text-content {
   .btn-translate > .dropdown > .dropdown-menu {
     left: -65px;
   }
+  .header-nav {
+    display: flex;
+    justify-content: center
+  }
 }
 
 @media (max-width: 575px) {
