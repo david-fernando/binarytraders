@@ -375,6 +375,9 @@ footer .text-content {
     position: fixed !important;
     right: 20px !important;
   }
+  .header-nav > .container {
+    min-width: min-content;
+  }
 }
 
 @media (max-width: 797px) {
