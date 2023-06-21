@@ -373,11 +373,25 @@ footer .text-content {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1399px) {
+  .header-text > span {
+    font-size: 34px !important;
+  }
+  .header-background-bottom {
+    position: relative;
+    right: -4rem;
+  }
+  .header-background-top {
+    position: relative;
+    right: 5.89rem;
+}
+}
+
+/* @media (min-width: 1400px) {
   h1 {
     font-size: 52px !important;
   }
-}
+} */
 
 @media (max-width: 1199px) {
   .banner-background {
