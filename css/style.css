@@ -449,6 +449,9 @@ footer .text-content {
   .column-reverse-mobile {
     justify-content: center;
   }
+}
+
+@media (max-width: 979px) {
   .banner-content {
     padding-top: 60px;
   }
