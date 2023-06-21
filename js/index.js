@@ -37,17 +37,7 @@ function showMoreText(){
   })
 }
 
-// function openCookiesSettings() {
-//   const button = document.querySelector('.manage-cookies')
-//   const cookiesModal = document.querySelector('.cc-nb-changep')
-
-//   button.addEventListener('click', ()=>{
-//     console.log('oi')
-//     console.log(cookiesModal)
-//     cookiesModal.setAttribute('style', 'display:block')
-//   })
-// }
+textFit(document.getElementsByClassName('header-text'), {minFontSize:34, maxFontSize:42})
 
 showMoreText()
 changeUrlAccordingToTheLanguage()
-// openCookiesSettings()
