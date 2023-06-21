@@ -432,6 +432,13 @@ footer .text-content {
   }
 }
 
+@media (min-width: 678px) and (max-width: 914px) {
+  .skills-content > .container > div {
+    position: relative;
+    right: 1rem;
+  }
+}
+
 @media (max-width: 1108px) {
   .header-text > span {
     line-height: 37px;
