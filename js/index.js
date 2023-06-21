@@ -36,5 +36,18 @@ function showMoreText(){
       return showMoreTextButton.innerHTML = 'Show more'
   })
 }
+
+// function openCookiesSettings() {
+//   const button = document.querySelector('.manage-cookies')
+//   const cookiesModal = document.querySelector('.cc-nb-changep')
+
+//   button.addEventListener('click', ()=>{
+//     console.log('oi')
+//     console.log(cookiesModal)
+//     cookiesModal.setAttribute('style', 'display:block')
+//   })
+// }
+
 showMoreText()
 changeUrlAccordingToTheLanguage()
+// openCookiesSettings()
