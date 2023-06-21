@@ -24,6 +24,7 @@ function showMoreText(){
   const showMoreTextButton = document.querySelector('.showMoreTextButton')
 
   button.addEventListener('click', () => {
+    console.log('oi')
     const isOpenShowMore = (moreText.style.display === 'block')? true : false    
       if(!isOpenShowMore){
         moreText.style.display = 'block'
@@ -37,7 +38,6 @@ function showMoreText(){
   })
 }
 
-textFit(document.getElementsByClassName('header-text'), {minFontSize:34, maxFontSize:42})
-
 showMoreText()
 changeUrlAccordingToTheLanguage()
+textFit(document.getElementsByClassName('header-text'), {minFontSize:34, maxFontSize:42})
