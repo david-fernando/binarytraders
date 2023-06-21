@@ -411,6 +411,21 @@ footer .text-content {
   }
 } */
 
+.icon-content-circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  justify-content: center;
+  margin: 10px 0;
+  transition: background-color .5s;
+}
+
+.icon-content-circle {
+  background-color: #1e293b;
+  display: grid;
+  align-items: center;
+}
+
 .testmonials-content .box-testmonial-content {
   height: 393px;
 }
