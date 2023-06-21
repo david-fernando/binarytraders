@@ -265,7 +265,6 @@ footer .text-content {
 .mobile-hidden > .container {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 
 .header-background-top, .header-background-bottom {
@@ -373,7 +372,7 @@ footer .text-content {
   }
 }
 
-@media (min-width: 1399px) {
+@media (max-width: 1399px) {
   .header-text > span {
     font-size: 34px !important;
   }
