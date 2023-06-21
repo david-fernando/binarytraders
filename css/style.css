@@ -411,6 +411,10 @@ footer .text-content {
   }
 } */
 
+.testmonials-content .box-testmonial-content {
+  height: 393px;
+}
+
 @media (max-width: 1199px) {
   .banner-background {
     height: 100%;
