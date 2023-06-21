@@ -366,7 +366,7 @@ footer .text-content {
     background-size: 41% 100%;
     background-repeat: no-repeat;
     background-position: 22%;
-    transform: rotate(-20.5deg) scale(2.05) translateX(32px);
+    transform: rotate(-20.5deg) scale(2.05) translateX(32px) translateY(-2px);
   }
   .header-text > span {
     font-size: 34px !important;
