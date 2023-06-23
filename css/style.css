@@ -781,6 +781,7 @@ footer .text-content {
     padding: 1rem;
     position: relative;
     top: 15px;
+    text-align: center;
   }
 
   .social-media-links-mobile {
