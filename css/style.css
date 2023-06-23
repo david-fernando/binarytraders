@@ -683,6 +683,9 @@ footer .text-content {
   .header-nav > .container {
     margin-left: 0px;
   }
+  .btn-translate {
+    right: -13px !important;
+  }
 }
 
 @media (max-width: 560px) {
