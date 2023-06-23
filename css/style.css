@@ -673,12 +673,13 @@ footer .text-content {
 @media (max-width: 590px) {
   .navbar {
     width: max-content;
+    min-width: 100%;
     position: relative;
     right: 1rem;
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 390px) {
   .header-nav > .container {
     margin-left: 0px;
   }
