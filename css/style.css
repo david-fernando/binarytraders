@@ -620,7 +620,7 @@ footer .text-content {
   }
 }
 
-@media (min-width: 773px) and (max-width: 980px) {
+@media (min-width: 769px) and (max-width: 980px) {
   .info-box-1, .info-box-2, .info-box-3, .bg-timeline > div > div {
     width: max-content !important;
   }
@@ -637,6 +637,9 @@ footer .text-content {
   .testmonials-content .box-testmonial-content {
     width: 26rem;
     height: 349px;
+  }
+  .ball-content-bg > img {
+    width: 316px;
   }
 }
 
