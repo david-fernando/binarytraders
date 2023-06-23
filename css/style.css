@@ -593,7 +593,7 @@ footer .text-content {
   .btn-translate {
     position: relative !important;
     right: 20px !important;
-    top: -0.01rem !important;
+    top: -0.00001rem !important;
   }
   .header-nav > .container {
     min-width: -webkit-fill-available;
@@ -651,7 +651,7 @@ footer .text-content {
   .btn-translate {
     position: relative !important;
     right: -89px !important;
-    top: -0.01rem !important;
+    top: -0.00001rem !important;
   }
 }
 
