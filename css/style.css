@@ -618,6 +618,12 @@ footer .text-content {
   .desk-hidden > .container > div {
     justify-content: center;
   }
+  /* .policy-info-content p {
+    font-size: 24px !important;
+  }
+  .policy-info-content ul li {
+    font-size: 24px !important;
+  } */
 }
 
 @media (min-width: 769px) and (max-width: 980px) {
@@ -641,6 +647,9 @@ footer .text-content {
   .ball-content-bg > img {
     width: 316px;
   }
+  .policy-info-content > .container {
+    max-width: 943px !important;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 886px) {
@@ -658,6 +667,9 @@ footer .text-content {
 @media (max-width: 797px) {
   .header-nav {
     width: 90% !important;
+  }
+  .privacy-policy > .header-nav {
+    width: 100% !important;
   }
 }
 
