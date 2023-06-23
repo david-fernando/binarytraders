@@ -591,11 +591,12 @@ footer .text-content {
 
 @media (max-width: 980px){
   .btn-translate {
-    position: fixed !important;
+    position: relative !important;
     right: 20px !important;
+    top: -0.01rem;
   }
   .header-nav > .container {
-    min-width: min-content;
+    min-width: -webkit-fill-available;
   }
   .desk-hidden {
     display: block !important;
@@ -606,12 +607,6 @@ footer .text-content {
   .desk-hidden > .container > div {
     justify-content: center;
   }
-  /* .policy-info-content p {
-    font-size: 24px !important;
-  }
-  .policy-info-content ul li {
-    font-size: 24px !important;
-  } */
 }
 
 @media (min-width: 769px) and (max-width: 980px) {
@@ -647,8 +642,16 @@ footer .text-content {
     right: 5.4rem;
   }
   .header-nav > .container {
-    width: 90%;
+    min-width: -webkit-fill-available;
     margin-left: 85px;
+  }
+  .navbar {
+    min-width: 100%;
+  }
+  .btn-translate {
+    position: relative !important;
+    right: -89px !important;
+    top: -0.01rem;
   }
 }
 
@@ -672,6 +675,12 @@ footer .text-content {
     width: max-content;
     position: relative;
     right: 1rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .header-nav > .container {
+    margin-left: 0px;
   }
 }
 
