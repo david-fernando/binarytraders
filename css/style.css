@@ -620,9 +620,23 @@ footer .text-content {
   }
 }
 
-@media (min-width: 773px) and (max-width: 807px) {
+@media (min-width: 773px) and (max-width: 980px) {
   .info-box-1, .info-box-2, .info-box-3, .bg-timeline > div > div {
     width: max-content !important;
+  }
+  .container {
+    max-width: 720px !important;
+  }
+  .solution-content > .container {
+    max-width: 1140px !important;
+  }
+  .testmonials-carousel > .slick-list > .slick-track {
+    display: flex !important;
+    gap: 14rem;
+  }
+  .testmonials-content .box-testmonial-content {
+    width: 26rem;
+    height: 349px;
   }
 }
 
