@@ -686,6 +686,9 @@ footer .text-content {
   .btn-translate {
     right: -13px !important;
   }
+  .btn-translate > .dropdown > .dropdown-menu {
+    left: -75px;
+  }
 }
 
 @media (max-width: 560px) {
