@@ -322,6 +322,7 @@ footer .text-content {
 .page-content {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .button-tablet {
@@ -459,12 +460,6 @@ footer .text-content {
   }
 }
 
-@media (max-width: 979px) {
-  .banner-content {
-    padding-top: 60px;
-  }
-}
-
 @media (min-width: 678px) and (max-width: 914px) {
   .skills-content > .container > div {
     position: relative;
@@ -551,6 +546,30 @@ footer .text-content {
   }
 }
 
+@media (max-width: 1006px) {
+  .banner-mobile {
+    display: block !important;
+  }
+  .banner-desktop {
+    display: none !important;
+  }
+
+  .solution-content .caroussel-desk-content {
+    display: none;
+  }
+
+  .solution-content .caroussel-mobile-content {
+    display: block;
+  }
+
+  .banner-content {
+    padding-top: 60px;
+  }
+  .easy-content .info-box-1, .easy-content .info-box-2, .easy-content .info-box-3 {
+    background-position: 205px 20px;
+  }
+}
+
 @media (max-width: 1090px) {
   .header-download-button {
     bottom: 18px;
@@ -590,11 +609,20 @@ footer .text-content {
   .header-nav > .container {
     min-width: min-content;
   }
+  .desk-hidden {
+    display: block !important;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+  .desk-hidden > .container > div {
+    justify-content: center;
+  }
 }
 
-@media (max-width: 797px) {
-  .header-nav {
-    width: 90% !important;
+@media (min-width: 773px) and (max-width: 807px) {
+  .info-box-1, .info-box-2, .info-box-3, .bg-timeline > div > div {
+    width: max-content !important;
   }
 }
 
@@ -603,6 +631,16 @@ footer .text-content {
     width: max-content;
     position: relative;
     right: 5.4rem;
+  }
+  .header-nav > .container {
+    width: 90%;
+    margin-left: 85px;
+  }
+}
+
+@media (max-width: 797px) {
+  .header-nav {
+    width: 90% !important;
   }
 }
 
