@@ -3,19 +3,29 @@ function showMoreText(){
   const moreText = document.getElementById('more-text')
   const ellipsis = document.getElementById('ellipsis')
   const showMoreTextButton = document.querySelector('.showMoreTextButton')
+  const language = window.location.pathname.replaceAll('/', '')
+
+  const showLessText = {
+    'en': 'Show less',
+    'pt': 'Mostrar menos' 
+  }
+
+  const showMoreText = {
+    'en': 'Show more',
+    'pt': 'Mostrar mais' 
+  }
 
   button.addEventListener('click', () => {
-    console.log('oi')
     const isOpenShowMore = (moreText.style.display === 'block')? true : false    
       if(!isOpenShowMore){
         moreText.style.display = 'block'
         ellipsis.style.display = 'none'
-        return showMoreTextButton.innerHTML = 'Show less'
+        return showMoreTextButton.innerHTML = showLessText[language] || 'Show less'
       }
 
       moreText.style.display = 'none'
       ellipsis.style.display = 'inherit'
-      return showMoreTextButton.innerHTML = 'Show more'
+      return showMoreTextButton.innerHTML = showMoreText[language] || 'Show more'
   })
 }
 
