@@ -24,34 +24,8 @@
 
     <link rel="stylesheet" href="css/base.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link media="screen" href="css/bootstrap.min.css" rel="stylesheet"
-          crossorigin="anonymous" async>
-
-    <style>
-        .accordion-content .btn-see-more.collapsed:after {
-            content: '+ Show More';
-        }
-
-        .accordion-content .btn-see-more:not(.collapsed):after {
-            content: '- Show Less';
-        }
-
-        @media (max-width: 980px) {
-            .skill-mb-text1 {
-                margin-left: -12px !important;
-                margin-right: 11px;
-            }
-
-            .skill-mb-text3 {
-                margin-left: -20px;
-                margin-right: 7px;
-            }
-
-            .skill-mb-text4 {
-                margin-left: -7px;
-            }
-        }
-    </style>
+    <link media="screen" href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" async>
+    <link rel="stylesheet" href="css/accordion.css">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YS5QJ1BND"></script>
@@ -1347,56 +1321,7 @@
 
 <script src="js/jquery-3.6.3.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.text-content-caroussel').slick({
-            arrows: false,
-            dots: true,
-            infinite: true,
-            fade: true,
-            speed: 0,
-            touchThreshold: 10,
-            lazyLoad: 'ondemand',
-        });
-    });
-
-    $(document).ready(function () {
-        $('.benefits-carousel').slick({
-            arrows: false,
-            dots: true,
-            infinite: true,
-            lazyLoad: 'ondemand',
-        });
-    });
-
-    $(document).ready(function () {
-        $('.easy-carousel').slick({
-            arrows: false,
-            dots: true,
-            infinite: true,
-            lazyLoad: 'ondemand',
-        });
-    });
-
-    $(document).ready(function () {
-        $('.testmonials-carousel').slick({
-            arrows: false,
-            dots: true,
-            infinite: true,
-            slidesToShow: 3,
-            lazyLoad: 'ondemand',
-            responsive: [
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
-    });
-</script>
+<script src="js/carousel.js"></script>
 <script src="js/textFit.min.js"></script>
 <script src="js/redirect.js"></script>
 <script src="js/index.js"></script>
