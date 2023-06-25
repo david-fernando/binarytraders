@@ -348,6 +348,18 @@ footer .text-content {
   height: 414px !important;
 }
 
+.system-icon {
+  height: 30px;
+}
+
+.handshake-icon {
+  height: 26.5px;
+}
+
+.navigation-icon {
+  height: 40px;
+}
+
 @media (max-height: 900px) {
   .header-background-bottom > .background-content {
     transform: rotate(-31deg) scale(2.56) translateX(-2px);
