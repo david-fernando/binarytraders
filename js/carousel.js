@@ -37,7 +37,21 @@ $(document).ready(function () {
       lazyLoad: 'ondemand',
       responsive: [
           {
-              breakpoint: 480,
+              breakpoint: 981,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+              }
+          },
+          {
+              breakpoint: 673,
+              settings: {
+                  slidesToShow: 1.68,
+                  slidesToScroll: 1
+              }
+          },
+          {
+              breakpoint: 573,
               settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1
