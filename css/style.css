@@ -826,14 +826,6 @@ footer .text-content {
   .solution-content > .container {
     max-width: 1140px !important;
   }
-  .testmonials-carousel > .slick-list > .slick-track {
-    display: flex !important;
-    gap: 14rem;
-  }
-  .testmonials-content .box-testmonial-content {
-    width: 26rem;
-    height: 349px;
-  }
   .ball-content-bg > img {
     width: 316px;
   }
@@ -1008,6 +1000,12 @@ footer .text-content {
   }
 }
 
+@media (max-width: 704px) {
+  .testmonials-portuguese .card-portuguese {
+    height: 438px !important;
+  }
+}
+
 @media (max-width: 372px) {
   .testmonials-portuguese .card-portuguese {
     height: 439px !important;
@@ -1023,5 +1021,11 @@ footer .text-content {
 @media (max-width: 341px) {
   .testmonials-portuguese .card-portuguese {
     height: 490px !important;
+  }
+}
+
+@media (max-width: 332px) {
+  .btn-translate {
+    right: 20px !important;
   }
 }
