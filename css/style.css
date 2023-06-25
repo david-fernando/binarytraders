@@ -344,6 +344,10 @@ footer .text-content {
   display: none;
 }
 
+.testmonials-portuguese .card-portuguese {
+  height: 414px !important;
+}
+
 @media (max-height: 900px) {
   .header-background-bottom > .background-content {
     transform: rotate(-31deg) scale(2.56) translateX(-2px);
@@ -1001,5 +1005,23 @@ footer .text-content {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (max-width: 372px) {
+  .testmonials-portuguese .card-portuguese {
+    height: 439px !important;
+  }
+}
+
+@media (max-width: 356px) {
+  .testmonials-portuguese .card-portuguese {
+    height: 461px !important;
+  }
+}
+
+@media (max-width: 341px) {
+  .testmonials-portuguese .card-portuguese {
+    height: 490px !important;
   }
 }
