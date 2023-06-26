@@ -442,7 +442,7 @@ footer .text-content {
     right: -4rem;
   }
   .portuguese-content > .header-background-bottom {
-    margin-top: -2.5rem;
+    margin-top: 0rem;
   }
   .espanol-content > .header-background-bottom {
     bottom: 4.2rem !important;
