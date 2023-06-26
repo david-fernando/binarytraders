@@ -20,6 +20,10 @@ button:focus-visible {
   right: 4px;
 }
 
+.testmonials-espanol .card-espanol {
+  height: 438px !important;
+}
+
 .title-logo {
   font-family: 'Inter', 'sans-serif';
   font-weight: 600;
