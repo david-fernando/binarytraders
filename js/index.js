@@ -7,12 +7,14 @@ function showMoreText(){
 
   const showLessText = {
     'en': 'Show less',
-    'pt': 'Mostrar menos' 
+    'pt': 'Mostrar menos', 
+    'es': 'Menos', 
   }
 
   const showMoreText = {
     'en': 'Show more',
-    'pt': 'Mostrar mais' 
+    'pt': 'Mostrar mais', 
+    'es': 'Mostrar más', 
   }
 
   button.addEventListener('click', () => {
