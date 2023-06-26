@@ -14,7 +14,7 @@ function changeUrlAccordingToTheLanguage(){
   const url = returnUrlAccordingToTheLanguage[language] || 'https://en.binarytraders.net/'
 
   //O comentário abaixo só está ali para evitar o redirecionamento. Remova esse e o comentário abaixo depois de pronto, ou quando for necessário.
-  window.location.href = url;
+  // window.location.href = url;
 }
 
 changeUrlAccordingToTheLanguage()
