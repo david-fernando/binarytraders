@@ -398,6 +398,10 @@ footer .text-content {
   padding-top: 0.5rem !important;
 }
 
+.ball-content-bg img {
+  width: 507px !important;
+}
+
 @media (max-height: 900px) {
   .header-background-bottom > .background-content {
     transform: rotate(-31deg) scale(2.56) translateX(-2px);
