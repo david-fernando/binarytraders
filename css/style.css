@@ -391,7 +391,7 @@ footer .text-content {
   padding-top: 0.5rem !important;
 }
 
-.portuguese-box {
+.portuguese-box, .espanol-box {
   width: 74%;
 }
 
@@ -492,11 +492,11 @@ footer .text-content {
     margin-top: 45px;
   }
 
-  .portuguese-box {
+  .portuguese-box, .espanol-box {
     width: 38%;
   }
 
-  .portuguese-box > p {
+  .portuguese-box > p, .espanol-box > p {
     min-width: max-content;
   }
   .profits {
@@ -558,6 +558,12 @@ footer .text-content {
   }
 }
 
+@media (max-width: 1137px) {
+  .espanol-box {
+    width: 37%;
+  }
+}
+
 @media (max-width: 1128px) {
   .portuguese-box {
     width: 37%;
@@ -583,6 +589,12 @@ footer .text-content {
   }
   .espanol-content > .header-background-bottom {
     bottom: 3.7rem !important;
+  }
+}
+
+@media (max-width: 1137px) {
+  .espanol-box {
+    width: 36%;
   }
 }
 
@@ -628,6 +640,12 @@ footer .text-content {
   }
 }
 
+@media (max-width: 1106px) {
+  .espanol-box {
+    width: 35%;
+  }
+}
+
 @media (max-width: 1102px) {
   .espanol-content > div > div {
     padding-left: 0.3rem;
@@ -662,6 +680,9 @@ footer .text-content {
   .espanol-content > .header-background-bottom {
     bottom: 1.9rem !important;
   }
+  .espanol-box {
+    width: 34%;
+  }
 }
 
 @media (max-width: 1089px) {
@@ -688,6 +709,12 @@ footer .text-content {
   }
   .portuguese-box {
     width: 34%;
+  }
+}
+
+@media (max-width: 1076px) {
+  .espanol-box {
+    width: 33%;
   }
 }
 
@@ -736,6 +763,9 @@ footer .text-content {
   }
   .espanol-content > div > div {
     width: 51.1%;
+  }
+  .espanol-box {
+    width: 32%;
   }
 }
 
