@@ -383,10 +383,6 @@ footer .text-content {
   margin-top: 31px !important;
 }
 
-.espanol-content > .header-background-bottom {
-  bottom: 2.9rem !important;
-}
-
 .art-3 {
   margin-top: 19px;
 }
@@ -774,6 +770,12 @@ footer .text-content {
 @media (max-width: 1048px) {
   .portuguese-content > .header-background-bottom {
     margin-top: -2.989rem;
+  }
+}
+
+@media (max-width: 1045px) {
+  .espanol-content > .header-background-bottom {
+      bottom: 0rem !important;
   }
 }
 
