@@ -395,6 +395,10 @@ footer .text-content {
   width: 74%;
 }
 
+.espanol-flex {
+  gap: 9rem
+}
+
 @media (max-height: 900px) {
   .header-background-bottom > .background-content {
     transform: rotate(-31deg) scale(2.56) translateX(-2px);
@@ -501,6 +505,9 @@ footer .text-content {
   }
   .profits {
     padding-top: 0.5rem !important;
+  }
+  .espanol-flex {
+    gap: 3rem;
   }
 }
 
@@ -646,6 +653,12 @@ footer .text-content {
   }
 }
 
+@media (max-width: 1104px) {
+  .espanol-flex {
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 1102px) {
   .espanol-content > div > div {
     padding-left: 0.3rem;
@@ -730,6 +743,9 @@ footer .text-content {
 @media (max-width: 1072px) {
   .espanol-content > div > div {
     width: 50.8%;
+  }
+  .espanol-flex {
+    gap: 1rem;
   }
 }
 
