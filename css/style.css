@@ -394,6 +394,10 @@ footer .text-content {
   margin-top: 19px;
 }
 
+.profits {
+  padding-top: 0.5rem !important;
+}
+
 @media (max-height: 900px) {
   .header-background-bottom > .background-content {
     transform: rotate(-31deg) scale(2.56) translateX(-2px);
@@ -483,6 +487,12 @@ footer .text-content {
 
   .art-3 {
     margin-top: 45px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .profits {
+    padding-top: 1.5rem !important;
   }
 }
 
