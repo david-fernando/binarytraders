@@ -364,8 +364,34 @@ footer .text-content {
   height: 40px;
 }
 
+.art {
+  position: relative;
+  bottom: 2.5rem;
+}
+
+.art-2 {
+  position: relative;
+  bottom: 3.5rem;
+}
+
+.tools-images {
+  transform: scale(1.1) !important;
+  position: relative !important;
+  right: 1.3rem !important;
+  top: 2rem !important;
+}
+
+.line {
+  margin-bottom: -7px !important;
+  margin-top: 31px !important;
+}
+
 .espanol-content > .header-background-bottom {
   bottom: 2.9rem !important;
+}
+
+.art-3 {
+  margin-top: 19px;
 }
 
 @media (max-height: 900px) {
@@ -450,6 +476,13 @@ footer .text-content {
   .header-background-top {
     position: relative;
     right: 5.89rem;
+  }
+  .line {
+    margin-top: 7px !important;
+  }
+
+  .art-3 {
+    margin-top: 45px;
   }
 }
 
