@@ -322,6 +322,10 @@ footer .text-content {
 
 .tools-images {
   width: 92%;
+  transform: scale(1.1) !important;
+  position: relative !important;
+  right: 1.3rem !important;
+  top: 2rem !important;
 }
 
 .banner-content {
@@ -374,13 +378,6 @@ footer .text-content {
   bottom: 3.5rem;
 }
 
-.tools-images {
-  transform: scale(1.1) !important;
-  position: relative !important;
-  right: 1.3rem !important;
-  top: 2rem !important;
-}
-
 .line {
   margin-bottom: -7px !important;
   margin-top: 31px !important;
@@ -396,10 +393,6 @@ footer .text-content {
 
 .profits {
   padding-top: 0.5rem !important;
-}
-
-.ball-content-bg img {
-  width: 507px !important;
 }
 
 @media (max-height: 900px) {
