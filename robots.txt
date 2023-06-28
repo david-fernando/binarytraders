@@ -1,4 +1,5 @@
 User-Agent: *
+Allow: /
 Disallow: /LICENSE
 Disallow: /README.md
 Disallow: /.htsccess
