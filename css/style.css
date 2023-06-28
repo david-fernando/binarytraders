@@ -403,9 +403,14 @@ footer .text-content {
   padding-top: 2.5rem !important;
 }
 
-/* .espanol-line {
-  margin-bottom: 0.5rem !important;
-} */
+.espanol-line {
+  position: relative;
+  bottom: 0.7rem !important;
+}
+
+.espanol-align {
+  margin-top: 8px;
+}
 
 @media (max-height: 900px) {
   .header-background-bottom > .background-content {
@@ -502,7 +507,7 @@ footer .text-content {
 
   .espanol-line {
     position: relative;
-    bottom: 1rem;
+    bottom: 2rem !important;
   }
 
   .art-3 {
@@ -524,7 +529,7 @@ footer .text-content {
   }
 
   .espanol-profits {
-    padding-top: 0rem !important;
+    padding-top: 1rem !important;
   }
 }
 
@@ -942,6 +947,9 @@ footer .text-content {
   .espanol-line {
     position: relative;
     bottom: 1.5rem;
+  }
+  .espanol-align {
+    margin-top: -9px;
   }
 }
 
