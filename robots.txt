@@ -1,8 +1,4 @@
 User-Agent: *
-Disallow: /js/
-Disallow: /css/
-Disallow: /slick/
-Disallow: /tools/
 Disallow: /LICENSE
 Disallow: /README.md
 Disallow: /.htsccess
