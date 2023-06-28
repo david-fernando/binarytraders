@@ -1,0 +1,1 @@
+.accordion-content .btn-see-more.collapsed:after{content:'+ Show More'}.accordion-content .btn-see-more:not(.collapsed):after{content:'- Show Less'}@media (max-width:980px){.skill-mb-text1{margin-left:-12px!important;margin-right:11px}.skill-mb-text3{margin-left:-20px;margin-right:7px}.skill-mb-text4{margin-left:-7px}}
