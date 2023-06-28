@@ -495,7 +495,7 @@ footer .text-content {
     margin-top: 0rem;
   }
   .espanol-content > .header-background-bottom {
-    bottom: 4.2rem !important;
+    bottom: 2.5rem !important;
   }
   .header-background-top {
     position: relative;
@@ -583,7 +583,7 @@ footer .text-content {
     width: 100%;
   }
   .espanol-content > .header-background-bottom {
-    bottom: 3.8rem !important;
+    bottom: 2.2rem !important;
   }
 }
 
@@ -604,7 +604,7 @@ footer .text-content {
     padding-right: 0.5rem;
   }
   .espanol-content > .header-background-bottom {
-    bottom: 3.6rem !important;
+    bottom: 1.9rem !important;
   }
   .espanol-content > div > .banner-background {
     padding: 0px !important;
@@ -617,7 +617,7 @@ footer .text-content {
     padding-right: 0.2rem;
   }
   .espanol-content > .header-background-bottom {
-    bottom: 3.7rem !important;
+    bottom: 2rem !important;
   }
 }
 
@@ -659,13 +659,13 @@ footer .text-content {
     padding-left: 0.5rem;
   }
   .espanol-content > .header-background-bottom {
-    bottom: 3.9rem !important;
+    bottom: 2.2rem !important;
   }
 }
 
 @media (max-width: 1108px) {
   .espanol-content > .header-background-bottom {
-    bottom: 3.1rem !important;
+    bottom: 1.4rem !important;
   }
 }
 
@@ -686,13 +686,13 @@ footer .text-content {
     padding-left: 0.3rem;
   }
   .espanol-content > .header-background-bottom {
-    bottom: 3.2rem !important;
+    bottom: 1.5rem !important;
   }
 }
 
 @media (max-width: 1098px) {
   .espanol-content > .header-background-bottom {
-    bottom: 1.7rem !important;
+    bottom: 0rem !important;
   }
 }
 
