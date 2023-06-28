@@ -399,6 +399,14 @@ footer .text-content {
   gap: 9rem
 }
 
+.espanol-profits {
+  padding-top: 2.5rem !important;
+}
+
+/* .espanol-line {
+  margin-bottom: 0.5rem !important;
+} */
+
 @media (max-height: 900px) {
   .header-background-bottom > .background-content {
     transform: rotate(-31deg) scale(2.56) translateX(-2px);
@@ -492,6 +500,11 @@ footer .text-content {
     margin-top: 7px !important;
   }
 
+  .espanol-line {
+    position: relative;
+    bottom: 1rem;
+  }
+
   .art-3 {
     margin-top: 45px;
   }
@@ -508,6 +521,10 @@ footer .text-content {
   }
   .espanol-flex {
     gap: 3rem;
+  }
+
+  .espanol-profits {
+    padding-top: 0rem !important;
   }
 }
 
@@ -918,6 +935,13 @@ footer .text-content {
   }
   .espanol-content > .header-background-bottom {
     bottom: -0.8rem !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .espanol-line {
+    position: relative;
+    bottom: 1.5rem;
   }
 }
 
