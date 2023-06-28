@@ -1,5 +1,5 @@
+Sitemap: https://binarytraders.vercel.app/sitemap.xml
 User-Agent: *
-Allow: /
 Disallow: /LICENSE
 Disallow: /README.md
 Disallow: /.htsccess
