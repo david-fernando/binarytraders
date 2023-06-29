@@ -1368,6 +1368,8 @@ footer .text-content {
   .social-media-links-mobile {
     display: flex;
     gap: 8px;
+    align-items: center;
+    justify-content: center;
   }
 
   .social-media-links-mobile > a {
