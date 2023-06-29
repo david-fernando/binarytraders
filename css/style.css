@@ -1400,6 +1400,13 @@ footer .text-content {
   }
 }
 
+@media (min-width:434px) and (max-width: 450px){
+  .handshake {
+    position: relative;
+    left: 13px;
+  }
+}
+
 @media (max-width: 372px) {
   .testmonials-portuguese .card-portuguese {
     height: 439px !important;
