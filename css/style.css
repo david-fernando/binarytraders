@@ -1372,16 +1372,6 @@ footer .text-content {
     justify-content: center;
   }
 
-  .social-media-links-mobile > a:first-child > img {
-    position: relative;
-    right: 2px;
-  }
-
-  .social-media-links-mobile > a:nth-child(2) > img {
-    position: relative;
-    right: 1px;
-  }
-
   .social-media-links-mobile > a {
     background-color: #2D374F;
     display: flex;
@@ -1408,6 +1398,34 @@ footer .text-content {
   .experience-text {
     position: relative;
     right: 13px;
+  }
+}
+
+@media (min-width: 433px) and (max-width: 433px) {
+  .handshake {
+    position: relative;
+    left: 0px;
+  }
+  .experience-text {
+    position: relative;
+    right: 18px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 450px) {
+  .active-users-text {
+    text-wrap: nowrap;
+  }
+  .active-users-content-english {
+    position: relative;
+    right: 13px;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 375px) {
+  .active-users-content {
+    position: relative;
+    right: 10px;
   }
 }
 
