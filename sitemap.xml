@@ -3,52 +3,47 @@
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 	<loc>https://binarytraders.vercel.app/</loc>
-	<lastmod>2023-06-28T23:21:09+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://binarytraders.vercel.app/en</loc>
-	<lastmod>2023-06-28T23:21:09+01:00</lastmod>
+	<lastmod>2023-06-29T06:37:42+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://binarytraders.vercel.app/es</loc>
-	<lastmod>2023-06-28T23:21:09+01:00</lastmod>
+	<lastmod>2023-06-29T06:37:42+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://binarytraders.vercel.app/pt</loc>
-	<lastmod>2023-06-28T23:21:09+01:00</lastmod>
+	<lastmod>2023-06-29T06:37:42+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://binarytraders.vercel.app/en/terms-and-conditions</loc>
-	<lastmod>2023-06-28T23:21:09+01:00</lastmod>
-	<priority>0.8</priority>
+	<loc>https://binarytraders.vercel.app/terms-and-conditions</loc>
+	<lastmod>2023-06-29T06:37:42+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://binarytraders.vercel.app/en/privacy-policy</loc>
-	<lastmod>2023-06-28T23:21:09+01:00</lastmod>
-	<priority>0.8</priority>
+	<loc>https://binarytraders.vercel.app/privacy-policy</loc>
+	<lastmod>2023-06-29T06:37:42+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://binarytraders.vercel.app/es/terrminos-y-condiciones</loc>
-	<lastmod>2023-06-28T23:21:11+01:00</lastmod>
+	<lastmod>2023-06-29T06:37:42+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://binarytraders.vercel.app/es/politica-de-privacidad</loc>
-	<lastmod>2023-06-28T23:21:11+01:00</lastmod>
+	<lastmod>2023-06-29T06:37:42+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://binarytraders.vercel.app/pt/termos-e-condicoes</loc>
-	<lastmod>2023-06-28T23:21:12+01:00</lastmod>
+	<lastmod>2023-06-29T06:37:44+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://binarytraders.vercel.app/pt/politica-de-privacidade</loc>
-	<lastmod>2023-06-28T23:21:12+01:00</lastmod>
+	<lastmod>2023-06-29T06:37:44+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 </urlset>
