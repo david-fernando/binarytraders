@@ -1405,6 +1405,10 @@ footer .text-content {
     position: relative;
     left: 13px;
   }
+  .experience-text {
+    position: relative;
+    right: 13px;
+  }
 }
 
 @media (max-width: 372px) {
