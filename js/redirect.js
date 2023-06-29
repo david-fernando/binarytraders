@@ -1,7 +1,7 @@
 function changeUrlAccordingToTheLanguage(){
   const language = window.navigator.language;
 
-  if (language === 'en', !languages in returnUrlAccordingToTheLanguage) {
+  if (language === 'en', !language in returnUrlAccordingToTheLanguage) {
     return;
   }
 
