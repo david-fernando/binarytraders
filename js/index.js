@@ -6,13 +6,13 @@ function showMoreText(){
   const language = window.location.pathname.replaceAll('/', '')
 
   const showLessText = {
-    'en': 'Show less',
+    '': 'Show less',
     'pt': 'Mostrar menos', 
     'es': 'Menos', 
   }
 
   const showMoreText = {
-    'en': 'Show more',
+    '': 'Show more',
     'pt': 'Mostrar mais', 
     'es': 'Mostrar más', 
   }
@@ -65,6 +65,10 @@ function changeTab(itemNumber) {
     }
   }
   
+}
+
+window.onbeforeunload = ()=>{
+  return localStorage.removeItem('chosen-language')
 }
 
 showMoreText()
