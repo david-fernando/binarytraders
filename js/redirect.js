@@ -4,7 +4,7 @@ function changeUrlAccordingToTheLanguage(){
 
   const returnUrlAccordingToTheLanguage = {
       'pt':'https://binarytraders.vercel.app/pt',
-      'pt-BR':'http://localhost:5500/pt',
+      'pt-BR':'https://binarytraders.vercel.app/pt',
       'es':'https://binarytraders.vercel.app/es',
   }
 
