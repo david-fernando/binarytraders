@@ -68,6 +68,11 @@ function changeTab(itemNumber) {
 }
 
 window.onbeforeunload = ()=>{
+  const page = window.location.pathname
+
+  if(page !== '/'){
+    return;
+  }
   return localStorage.removeItem('chosen-language')
 }
 
