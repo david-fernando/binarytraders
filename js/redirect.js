@@ -1,13 +1,14 @@
 function changeUrlAccordingToTheLanguage(){
   const language = window.navigator.language;
+  const chosenLanguage = localStorage.getItem('chosen-language') || ''
 
   const returnUrlAccordingToTheLanguage = {
       'pt':'https://binarytraders.vercel.app/pt',
-      'pt-BR':'https://binarytraders.vercel.app/pt',
+      'pt-BR':'http://localhost:5500/pt',
       'es':'https://binarytraders.vercel.app/es',
   }
 
-  if (language === 'en', !(language in returnUrlAccordingToTheLanguage)) {
+  if (language === 'en' || !(language in returnUrlAccordingToTheLanguage) || chosenLanguage === 'english') {
     return;
   }
 
