@@ -1372,6 +1372,16 @@ footer .text-content {
     justify-content: center;
   }
 
+  .social-media-links-mobile > a:first-child > img {
+    position: relative;
+    right: 2px;
+  }
+
+  .social-media-links-mobile > a:nth-child(2) > img {
+    position: relative;
+    right: 1px;
+  }
+
   .social-media-links-mobile > a {
     background-color: #2D374F;
     display: flex;
