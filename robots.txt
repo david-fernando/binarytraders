@@ -1,4 +1,4 @@
-Sitemap: https://binarytraders.vercel.app/sitemap.xml
+Sitemap: https://binarytraders.net/sitemap.xml
 User-Agent: *
 Disallow: /LICENSE
 Disallow: /README.md
