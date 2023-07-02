@@ -3,6 +3,7 @@ const cacheName = 'cache-v1';
 // Arquivos para armazenar em cache
 const filesToCache = [
   '/',
+  '/index.html',
   '/js',
   '/css'
 ];
