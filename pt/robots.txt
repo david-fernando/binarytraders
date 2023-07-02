@@ -1,3 +1,6 @@
-Sitemap: https://pt.binarytraders.net/sitemap.xml
+Sitemap: https://binarytraders.net/sitemap.xml
 User-Agent: *
-Allow: /
+Disallow: /LICENSE
+Disallow: /*.html
+Disallow: /*.html$
+Disallow: /#
