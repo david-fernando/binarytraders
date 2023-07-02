@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# Versão do manifesto: 1.0.0
+
+CACHE:
+css/
+js/
+
+NETWORK:
+*
+
+FALLBACK:
