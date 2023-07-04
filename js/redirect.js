@@ -1,6 +1,19 @@
 function changeUrlAccordingToTheLanguage(){
   const language = window.navigator.language;
-  const chosenLanguage = localStorage.getItem('chosen-language') || ''
+  
+  function getCookie(cookieName) {
+    const cookies = document.cookie.split("; ");
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].split("=");
+      if (cookie[0] === cookieName) {
+        return cookie[1];
+      }
+    }
+    return null;
+  }
+  const chosenLanguage = getCookie('chosen-language') || ''
+
+  console.log(chosenLanguage)
 
   const returnUrlAccordingToTheLanguage = {
       'pt':'https://pt.binarytraders.net',
@@ -8,13 +21,16 @@ function changeUrlAccordingToTheLanguage(){
       'es':'https://es.binarytraders.net',
   }
 
-  if (language === 'en' || !(language in returnUrlAccordingToTheLanguage) || chosenLanguage === 'english') {
+  if (language === 'en' || !(language in returnUrlAccordingToTheLanguage)) {
     return;
+  } 
+
+  if(chosenLanguage !== 'english'){
+    const url = returnUrlAccordingToTheLanguage[language] || 'https://binarytraders.net'
+    window.location.href = url;
   }
 
-  const url = returnUrlAccordingToTheLanguage[language] || 'https://binarytraders.net'
-  
-  window.location.href = url;
+  return;
 }
 
 changeUrlAccordingToTheLanguage()

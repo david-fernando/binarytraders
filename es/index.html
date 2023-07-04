@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" manifest="cachemanifest.appcache">
 <head>
     <meta charset="UTF-8">
-    <title>Obsignals - Señales De Opciones Binarias +90% Precisión Diaria</title>
+    <title>Obsignals - Señales Opciones Binarias +90% Precisión Diaria</title>
     <meta http-equiv="Cache-Control" content="max-age=604800, public">
     <meta name="description" content="Reciba señales de opciones binarias con una precisión diaria de más del 90%, las 24 horas del día, los 7 días de la semana, incluyendo operaciones de gráficos OTC. Las señales son compatibles con todos los corredores de opciones binarias.">
-    <link rel="icon" type="image/x-icon" href="https://binarytraders.net/img/logo.ico">
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
     <meta name="keywords"
           content="obsignals,
           obsignal,
@@ -86,19 +86,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta property="og:image" content="https://binarytraders.net/img/og-logo.png">
+    <meta property="og:image" content="img/og-logo.png">
     <meta property="og:image:type" content="../image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="1200">
     <meta property="og:image:alt" content="Logo Binary Options">
+    <link rel="canonical" href="https://es.binarytraders.net/">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://binarytraders.net/css/base.min.css">
-    <link rel="stylesheet" href="https://binarytraders.net/css/style.min.css">
-    <link media="screen" href="https://binarytraders.net/css/bootstrap.min.css" rel="stylesheet" async>
+    <link rel="stylesheet" href="css/base.min.css">
+    <link rel="stylesheet" href="css/style.min.css?v=2.0">
+    <link media="screen" href="css/bootstrap.min.css" rel="stylesheet" async>
 
     <style>
         .accordion-content .btn-see-more.collapsed:after {
@@ -176,7 +177,7 @@
             "preferences_center_close_button_hide": false,
             "page_refresh_confirmation_buttons": false,
             "website_name": "https://binarytraders.net/",
-            "website_privacy_policy_url": "https://binarytraders.net/privacy-policy.html"
+            "website_privacy_policy_url": "https://binarytraders.net/privacy-policy"
         });
     });
     </script>
@@ -204,7 +205,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="logo">
-                    <a class="navbar-brand" href="#"><img width="28.44" height="35" src="https://binarytraders.net/img/logo.svg" alt="Imagem da Logo"></a>
+                    <a class="navbar-brand" href="/"><img width="28.44" height="35" src="img/logo.svg" alt="Imagem da Logo"></a>
                     <h4 class="title-logo">BinaryTraders.<mark>net</mark></h4>
                     </div>
                     <div class="btn-translate">
@@ -221,7 +222,7 @@
                                 <li>
                                     <a
                                      class="dropdown-item"
-                                     href="javascript:void(localStorage.setItem('chosen-language', 'english'), window.location.href='https://binarytraders.net/');">
+                                     href="javascript:void(document.cookie='chosen-language=english;domain=.binarytraders.net', window.location.href='https://binarytraders.net');">
                                     <span>
                                     <img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/en-us.svg" alt="en"
                                             src="https://cdn.gtranslate.net/flags/svg/en-us.svg">
@@ -268,14 +269,14 @@
                         <a target="_blank"
                         href="https://chrome.google.com/webstore/detail/obsignals/amkbjfeoamfehgknhbnpggkkcmelkebb?hl=pt-PT"
                         class="chrome-download-button header-download-button px-3 py-2 d-inline-flex rounded text-decoration-none align-items-center mt-1">
-                            <img src="https://binarytraders.net/img/chrome-logo.svg" height="30" alt="Google Chrome Logo">
+                            <img src="img/chrome-logo.svg" height="30" alt="Google Chrome Logo">
                             <div class="ms-2 text-start">
                                 <p class="text-white mb-0">Descargar para</p>
                                 <p class="text-white mb-0"><b>Google Chrome</b></p>
                             </div>
                         </a>
                     </div>
-                    <img class="col-md-6 banner-background" src="https://binarytraders.net/img/banner-background.png" alt="Obsignals screenshot ilustration">
+                    <img class="col-md-6 banner-background banner-lazy" data-src="img/banner-background.webp" alt="Obsignals screenshot ilustration">
                 </div>
                 <div class="header-background-bottom">
                     <div class="background-content"></div>
@@ -293,7 +294,7 @@
                             sus resultados en el mercado de opciones binarias.</p>
                     </div>
         
-                    <img style="width: 100%" src="https://binarytraders.net/img/banner-content-mobile.png" alt="Ilustrative Solution" loading="lazy">
+                    <img class="banner-mobile-lazy" style="width: 100%" data-src="img/banner-content-mobile.webp" alt="Ilustrative Solution" loading="lazy">
                 </div>
             </div>
         </section>
@@ -305,7 +306,7 @@
                     <div class="col-md-3 col-6 text-center border-end">
                         <h2 class="font-weight-bold blue-id-color">+<span class="count">5</span></h2>
                         <div class="d-flex align-items-center justify-content-center">
-                            <img class="handshake" width="30" height="21" class="lazy skill-mb-text1" loading="lazy" src="https://binarytraders.net/img/icon_handshake_.svg"
+                            <img class="handshake" width="30" height="21" class="lazy skill-mb-text1" loading="lazy" src="img/icon_handshake_.svg"
                                  alt="Illustrative Icon">
                             <p class="mb-0 ms-2 experience-text">Años De Experiencia</p>
                         </div>
@@ -314,7 +315,7 @@
                     <div class="col-md-3 col-6 text-center border-end">
                         <h2 class="font-weight-bold blue-id-color">+<span class="count">21827</span></h2>
                         <div class="d-flex align-items-center justify-content-center active-users-content">
-                            <img width="35" height="25.09" class="lazy p-1 skill-mb-text2" loading="lazy" src="https://binarytraders.net/img/icon_users_.svg" width="35"
+                            <img width="35" height="25.09" class="lazy p-1 skill-mb-text2" loading="lazy" src="img/icon_users_.webp" width="35"
                                  alt="Illustrative Icon">
                             <p class="mb-0 ms-2 active-users-text">Usuarios Activos</p>
                         </div>
@@ -323,7 +324,7 @@
                     <div class="col-md-3 mt-sm-0 col-6 mt-4 text-center border-end">
                         <h2 class="font-weight-bold blue-id-color">+<span class="count">12</span></h2>
                         <div class="d-flex align-items-center justify-content-center">
-                            <img width="22" height="22" class="lazy skill-mb-text3" loading="lazy" src="https://binarytraders.net/img/icon_world.svg" alt="Illustrative Icon">
+                            <img width="22" height="22" class="lazy skill-mb-text3" loading="lazy" src="img/icon_world.webp" alt="Illustrative Icon">
                             <p class="mb-0 ms-2">Países De Usuarios</p>
                         </div>
                     </div>
@@ -331,7 +332,7 @@
                     <div class="col-md-3 mt-sm-0 col-6 mt-4 text-center">
                         <h2 class="font-weight-bold blue-id-color">+<span class="count">90</span>%</h2>
                         <div class="d-flex align-items-center justify-content-center">
-                            <img width="23" height="24" class="lazy skill-mb-text4" loading="lazy" src="https://binarytraders.net/img/icon_crosshair_.svg"
+                            <img width="23" height="24" class="lazy skill-mb-text4" loading="lazy" src="img/icon_crosshair_.webp"
                                  alt="Illustrative Icon">
                             <p class="mb-0 ms-2">Precisión Diaria</p>
                         </div>
@@ -347,7 +348,7 @@
                     <a target="_blank"
                        href="https://chrome.google.com/webstore/detail/obsignals/amkbjfeoamfehgknhbnpggkkcmelkebb?hl=pt-PT"
                        class="chrome-download-button px-3 py-2 d-inline-flex rounded text-decoration-none align-items-center mt-1">
-                        <img class="lazy" loading="lazy" src="https://binarytraders.net/img/chrome-logo.svg" height="30" alt="Logo Google Chrome">
+                        <img class="lazy" loading="lazy" src="img/chrome-logo.svg" height="30" alt="Logo Google Chrome">
                         <div class="ms-2 text-start">
                             <p class="text-white mb-0">Descargar para</p>
                             <p class="text-white mb-0"><b>Google Chrome</b></p>
@@ -370,14 +371,14 @@
                         <div data-aos="fade-left" class="box-content-1 text-start">
                             <div class="d-flex">
                                 <h3 class="fw-bold">Precisión</h3>
-                                <img width="337" height="34.39" loading="lazy" src="https://binarytraders.net/img/line-1.svg" class="lazy ms-3" alt="Line Icon">
+                                <img width="337" height="34.39" loading="lazy" src="img/line-1.svg" class="lazy ms-3" alt="Line Icon">
                             </div>
                             <p>Porcentaje de ganancias históricas</p>
                         </div>
         
                         <div data-aos="fade-right" class="box-content-2 text-start">
                             <div class="d-flex justify-content-end align-items-baseline">
-                                <img loading="lazy" src="https://binarytraders.net/img/line-2.svg" style="margin-bottom: -1px !important; position: relative; right: 56px;" class="lazy me-3" alt="Line Icon">
+                                <img loading="lazy" src="img/line-2.svg" style="margin-bottom: -1px !important; position: relative; right: 56px;" class="lazy me-3" alt="Line Icon">
                                 <div style="position: relative; right: 3.5rem; bottom: 4px;">
                                     <h3 class="fw-bold">Señal</h3>
                                     <p>Dirección CALL o PUT</p>
@@ -388,14 +389,14 @@
                         <div data-aos="fade-left" style="position: relative; top: 5.2rem;" class="box-content-3 text-start">
                             <div class="d-flex">
                                 <h3 class="fw-bold" style="position: relative; left: 2px;">Activo</h3>
-                                <img loading="lazy" src="https://binarytraders.net/img/line-3.svg" style="position: relative; right: -3px; top: 1px; width: 21rem;" class="lazy ms-3" alt="Line Icon">
+                                <img loading="lazy" src="img/line-3.svg" style="position: relative; right: -3px; top: 1px; width: 21rem;" class="lazy ms-3" alt="Line Icon">
                             </div>
                             <p>Par de divisas analizado</p>
                         </div>
         
                         <div data-aos="fade-right" class="box-content-4 text-start">
                             <div class="d-flex justify-content-end align-items-baseline">
-                                <img loading="lazy" src="https://binarytraders.net/img/line-4.svg" style="position: relative; top: 5px;" class="lazy me-3" alt="Line Icon">
+                                <img loading="lazy" src="img/line-4.svg" style="position: relative; top: 5px;" class="lazy me-3" alt="Line Icon">
                                 <div>
                                     <h3 class="fw-bold">Vencimiento</h3>
                                     <p>Tiempo de vencimiento recomendado</p>
@@ -406,14 +407,14 @@
                         <div data-aos="fade-left" style="position: relative; top: 6.4rem;" class="box-content-5 text-start">
                             <div class="d-flex">
                                 <h3 class="fw-bold">Horario</h3>
-                                <img loading="lazy" src="https://binarytraders.net/img/line-5.svg" style="position: relative; right: 1px; width: 22.7rem;" class="lazy ms-3" alt="Line Icon">
+                                <img loading="lazy" src="img/line-5.svg" style="position: relative; right: 1px; width: 22.7rem;" class="lazy ms-3" alt="Line Icon">
                             </div>
                             <p>Hora de ejecutar la negociación.</p>
                         </div>
         
                     </div>
         
-                    <img loading="lazy" src="https://binarytraders.net/img/solution-action.png" class="lazy solution-img"
+                    <img loading="lazy" src="img/solution-action.webp" class="lazy solution-img"
                          alt="Illustrative image of the tool's action">
         
                 </div>
@@ -424,7 +425,7 @@
         
                         <div>
                             <div class="tools-slider__box">
-                                <img class="w-100 lazy" loading="lazy" src="https://binarytraders.net/img/solution-action.png" alt="Solution Accuracy">
+                                <img class="w-100 lazy" loading="lazy" src="img/solution-action.webp" alt="Solution Accuracy">
                                 <div class="box-tools box-tools1">
                                     <h3 class="fw-bold text-white">Precisión</h3>
                                     <p class="text-white mb-0">Porcentaje de ganancias históricas</p>
@@ -435,7 +436,7 @@
         
                         <div>
                             <div class="tools-slider__box">
-                                <img class="w-100 lazy" loading="lazy" src="https://binarytraders.net/img/solution-action.png" alt="Solution Accuracy">
+                                <img class="w-100 lazy" loading="lazy" src="img/solution-action.webp" alt="Solution Accuracy">
                                 <div class="box-tools box-tools2">
                                     <h3 class="fw-bold text-white">Señal</h3>
                                     <p class="text-white mb-0">Dirección CALL o PUT</p>
@@ -446,7 +447,7 @@
         
                         <div>
                             <div class="tools-slider__box">
-                                <img class="w-100 lazy" loading="lazy" src="https://binarytraders.net/img/solution-action.png" alt="Solution Accuracy">
+                                <img class="w-100 lazy" loading="lazy" src="img/solution-action.webp" alt="Solution Accuracy">
                                 <div class="box-tools box-tools3">
                                     <h3 class="fw-bold text-white">Activo</h3>
                                     <p class="text-white mb-0">Par de divisas analizado</p>
@@ -457,7 +458,7 @@
         
                         <div>
                             <div class="tools-slider__box">
-                                <img class="w-100 lazy" loading="lazy" src="https://binarytraders.net/img/solution-action.png" alt="Solution Accuracy">
+                                <img class="w-100 lazy" loading="lazy" src="img/solution-action.webp" alt="Solution Accuracy">
                                 <div class="box-tools box-tools4">
                                     <h3 class="fw-bold text-white">Vencimiento</h3>
                                     <p class="text-white mb-0">Tiempo de vencimiento recomendado</p>
@@ -468,7 +469,7 @@
         
                         <div>
                             <div class="tools-slider__box">
-                                <img class="w-100 lazy" loading="lazy" src="https://binarytraders.net/img/solution-action.png" alt="Solution Accuracy">
+                                <img class="w-100 lazy" loading="lazy" src="img/solution-action.webp" alt="Solution Accuracy">
                                 <div class="box-tools box-tools5">
                                     <h3 class="fw-bold text-white">Tiempo</h3>
                                     <p class="text-white mb-0">Tiempo recomendado para operar</p>
@@ -495,7 +496,7 @@
                         <div class="d-flex mt-2">
                             <div class="box-content me-md-5 me-3">
                                 <div class="icon-content-circle">
-                                    <img src="https://binarytraders.net/img/users.svg" alt="Ilustrative Icon">
+                                    <img src="img/users.webp" alt="Ilustrative Icon">
                                 </div>
                                 <h3 class="font-weight-600 blue-id-color">Experiencia</h3>
                                 <p>Nuestra empresa ha estado operando en el mercado de opciones binarias desde 2017.</p>
@@ -503,7 +504,7 @@
         
                             <div class="box-content ps-md-5 ps-3">
                                 <div class="icon-content-circle">
-                                    <img src="https://binarytraders.net/img/handshake.svg" height="25px" alt="Ilustrative Icon">
+                                    <img src="img/handshake.svg" height="25px" alt="Ilustrative Icon">
                                 </div>
                                 <h3 class="font-weight-600 blue-id-color">Compromiso</h3>
                                 <p>Nuestro objetivo es ayudar a los traders a tener éxito en el mercado de opciones binarias.</p>
@@ -512,7 +513,7 @@
                     </div>
         
                     <div class="col-md-6 ball-content-bg px-5 mb-0 mt-4 mt-4 px-md-0 mb-md-0 art">
-                        <img width="450" height="483.77" data-aos="zoom-in" class="lazy" loading="lazy" src="https://binarytraders.net/img/group-card.png"
+                        <img width="450" height="483.77" data-aos="zoom-in" class="lazy" loading="lazy" src="img/group-card.webp"
                              alt="Illustrative image of the tool's action">
                     </div>
                 </div>
@@ -529,14 +530,14 @@
                         <p>Nuestras señales de opciones binarias están diseñadas para ayudarte a obtener los mejores resultados, sin importar tu nivel de experiencia en el mercado de opciones binarias.</p>
         
                         <div class="col-md-6 ball-content-bg px-5 px-md-0 mb-0 mt-4 mb-md-0">
-                            <img data-aos="zoom-in" class="lazy" loading="lazy" src="https://binarytraders.net/img/group-card.png"
+                            <img data-aos="zoom-in" class="lazy" loading="lazy" src="img/group-card.webp"
                                  alt="Illustrative image of the tool's action">
                         </div>
         
                         <div class="benefits-carousel mt-2">
                             <div class="box-content text-center">
                                 <div class="icon-content-circle mx-auto">
-                                    <img src="https://binarytraders.net/img/users.svg" alt="Ilustrative Icon">
+                                    <img src="img/users.webp" alt="Ilustrative Icon">
                                 </div>
                                 <h3 class="font-weight-600 blue-id-color">Experiencia</h3>
                                 <p>Nuestra empresa ha estado operando en el mercado de opciones binarias desde 2017.</p>
@@ -544,7 +545,7 @@
         
                             <div class="box-content text-center">
                                 <div class="icon-content-circle mx-auto">
-                                    <img src="https://binarytraders.net/img/handshake.svg" height="25px" alt="Ilustrative Icon">
+                                    <img src="img/handshake.svg" height="25px" alt="Ilustrative Icon">
                                 </div>
                                 <h3 class="font-weight-600 blue-id-color">Compromiso</h3>
                                 <p>Nuestro objetivo es ayudar a los traders a tener éxito en el mercado de opciones binarias.</p>
@@ -560,7 +561,7 @@
                 <div class="row align-items-center">
         
                     <div class="col-md-6 ball-content-bg px-5 px-md-0 mb-0 mt-4 mb-md-0 art-2">
-                        <img width="450" height="572.02" data-aos="zoom-in" class="lazy" loading="lazy" src="https://binarytraders.net/img/two-cards.png"
+                        <img width="450" height="572.02" data-aos="zoom-in" class="lazy" loading="lazy" src="img/two-cards.webp"
                              alt="Illustrative image of the tool's action">
                     </div>
         
@@ -571,7 +572,7 @@
                         <div class="d-flex mt-2">
                             <div class="box-content espanol-box">
                                 <div class="icon-content-circle">
-                                    <img src="https://binarytraders.net/img/dollar.svg" alt="Ilustrative Icon">
+                                    <img src="img/dollar.svg" alt="Ilustrative Icon">
                                 </div>
                                 <h3 class="font-weight-600 blue-id-color">Gratis</h3>
                                 <p>No se requiere ningún pago.<br> Puedes usarlo de forma gratuita.</p>
@@ -579,7 +580,7 @@
         
                             <div class="box-content ms-5 ps-5">
                                 <div class="icon-content-circle">
-                                    <img src="https://binarytraders.net/img/point.svg" style="width: 17px !important;" alt="Ilustrative Icon">
+                                    <img src="img/point.svg" style="width: 17px !important;" alt="Ilustrative Icon">
                                 </div>
                                 <h3 class="font-weight-600 blue-id-color">Navegación</h3>
                                 <p>Fácil de usar, incluso para un trader principiante absoluto.</p>
@@ -600,14 +601,14 @@
                         <p>Obsignals cuenta con una interfaz amigable que facilita su uso e identificación de las mejores señales de opciones binarias.</p>
         
                         <div class="col-md-6 ball-content-bg px-5 px-md-0 mb-0 mt-4 mb-md-0">
-                            <img data-aos="zoom-in" class="lazy" loading="lazy" src="https://binarytraders.net/img/two-cards.png"
+                            <img data-aos="zoom-in" class="lazy" loading="lazy" src="img/two-cards.webp"
                                  alt="Illustrative image of the tool's action">
                         </div>
         
                         <div class="benefits-carousel mt-2">
                             <div class="box-content text-center">
                                 <div class="icon-content-circle mx-auto">
-                                    <img src="https://binarytraders.net/img/dollar.svg" alt="Ilustrative Icon">
+                                    <img src="img/dollar.svg" alt="Ilustrative Icon">
                                 </div>
                                 <h3 class="font-weight-600 blue-id-color">Gratis</h3>
                                 <p>No se requiere ningún pago.<br> Puedes usarlo de forma gratuita</p>
@@ -615,7 +616,7 @@
         
                             <div class="box-content text-center">
                                 <div class="icon-content-circle mx-auto">
-                                    <img src="https://binarytraders.net/img/point.svg" class="navigation-icon" alt="Ilustrative Icon">
+                                    <img src="img/point.svg" class="navigation-icon" alt="Ilustrative Icon">
                                 </div>
                                 <h3 class="font-weight-600 blue-id-color">Navegación</h3>
                                 <p>Fácil de usar, incluso para un trader principiante absoluto.</p>
@@ -638,7 +639,7 @@
                         <div class="d-flex espanol-flex">
                             <div class="box-content">
                                 <div class="icon-content-circle">
-                                    <img src="https://binarytraders.net/img/target.svg" alt="Ícone ilustrativo">
+                                    <img src="img/target.svg" alt="Ícone ilustrativo">
                                 </div>
                                 <h3 class="font-weight-600 blue-id-color">Precisión</h3>
                                 <p>Señales diarias con una<br> tasa de acierto superior al 90%</p>
@@ -646,7 +647,7 @@
         
                             <div class="box-content">
                                 <div class="icon-content-circle">
-                                    <img src="https://binarytraders.net/img/computer.svg" alt="Ícone ilustrativo">
+                                    <img src="img/computer.svg" alt="Ícone ilustrativo">
                                 </div>
                                 <h3 class="font-weight-600 blue-id-color">Sistema</h3>
                                 <p>Las señales se envían las 24/7,<br> incluyendo el mercado OTC.</p>
@@ -655,7 +656,7 @@
                     </div>
         
                     <div style="position: relative; bottom: 2rem;" class="col-md-6 ball-content-bg px-5 text-md-end px-md-0 mb-4 mb-md-0">
-                        <img width="563.2" height="355.08" class="tools-images" style="margin-top: 35px; margin-left: 1rem; width: 32rem;" data-aos="zoom-in" src="https://binarytraders.net/img/logos-graph.png"
+                        <img width="563.2" height="355.08" class="tools-images" style="margin-top: 35px; margin-left: 1rem; width: 32rem;" data-aos="zoom-in" src="img/logos-graph.webp"
                              alt="Illustrative image of the tool's action">
                     </div>
                 </div>
@@ -673,13 +674,13 @@
                         <p>Nuestras señales de opciones binarias están diseñadas para marcos de tiempo de 1 minuto y 5 minutos, lo que te permite elegir qué señales se adaptan mejor a tu operativa diaria.</p>
         
                         <div class="col-md-6 ball-content-bg mb-0 mt-4 px-md-0 mb-md-0">
-                            <img data-aos="zoom-in" src="https://binarytraders.net/img/logos-graph.png" alt="Illustrative image of the tool's action">
+                            <img data-aos="zoom-in" class="logos-graph" data-src="img/logos-graph.webp" alt="Illustrative image of the tool's action">
                         </div>
         
                         <div class="benefits-carousel mt-2">
                             <div class="box-content text-center">
                                 <div class="icon-content-circle mx-auto">
-                                    <img src="https://binarytraders.net/img/target.svg" alt="Ilustrative Icon">
+                                    <img src="img/target.svg" alt="Ilustrative Icon">
                                 </div>
                                 <h3 class="font-weight-600 blue-id-color">Precisión</h3>
                                 <p>Señales diarias con una tasa de acierto superior al 90%</p>
@@ -687,7 +688,7 @@
         
                             <div class="box-content text-center">
                                 <div class="icon-content-circle mx-auto">
-                                    <img src="https://binarytraders.net/img/computer.svg" alt="Ilustrative Icon">
+                                    <img src="img/computer.svg" alt="Ilustrative Icon">
                                 </div>
                                 <h3 class="font-weight-600 blue-id-color">Sistema</h3>
                                 <p>Las señales se envían las 24/7, incluyendo el mercado OTC.</p>
@@ -710,7 +711,7 @@
                 <a target="_blank"
                    href="https://chrome.google.com/webstore/detail/obsignals/amkbjfeoamfehgknhbnpggkkcmelkebb?hl=pt-PT"
                    class="chrome-download-button text-start px-4 py-2 d-inline-flex rounded text-decoration-none align-items-center mt-2">
-                    <img src="https://binarytraders.net/img/chrome-logo.svg" height="35" alt="Logo Google Chrome">
+                    <img src="img/chrome-logo.svg" height="35" alt="Logo Google Chrome">
                     <div class="ms-2 text-start">
                         <p class="text-white mb-0">Descargar para</p>
                         <p class="text-white mb-0"><b>Google Chrome</b></p>
@@ -724,12 +725,12 @@
                 <div class="row">
         
                     <div style="margin-top: -10px" class="col-md-6 ball-content-bg px-5 px-md-0 mb-4 mb-md-0">
-                        <img width="450" height="572.02" data-aos="zoom-in" loading="lazy" src="https://binarytraders.net/img/value-cards.png" class="lazy art-3"
+                        <img width="450" height="445.08" style="position: relative; bottom: 16px;" data-aos="zoom-in" loading="lazy" src="img/value-cards.webp" class="lazy art-3"
                              alt="Illustrative image of the tool's action">
                     </div>
         
                     <div class="col-md-1 mobile-hidden text-end mt-3">
-                        <img style="margin-top: 10px;" width="43" height="404.19" class="lazy" loading="lazy" src="https://binarytraders.net/img/checklist-icons.svg"
+                        <img style="margin-top: 10px;" width="43" height="404.19" class="lazy" loading="lazy" src="img/checklist-icons.svg"
                              alt="Checklist illustrative icons">
                     </div>
         
@@ -737,7 +738,7 @@
                         <div class="mb-0 mb-md-4 pb-md-1 espanol-align">
                             <div class="d-flex align-items-start">
                                 <h3 class="font-weight-bold">
-                                    Descubre los beneficios de utilizar 
+                                    Descubre los beneficios de utilizar<br> 
                                     <span class="orange-id-color">
                                         señales de opciones binarias.
                                     </span>
@@ -782,14 +783,14 @@
                 <div class="row">
         
                     <div style="margin-top: -20px" class="col-md-6 ball-content-bg px-5 px-md-0 mb-4 mb-md-0">
-                        <img data-aos="zoom-in" loading="lazy" src="https://binarytraders.net/img/value-cards.png" class="lazy mt-md-4 pt-md-4"
+                        <img data-aos="zoom-in" loading="lazy" src="img/value-cards.webp" class="lazy mt-md-4 pt-md-4"
                              alt="Illustrative image of the tool's action">
                     </div>
         
                     <div class="benefits-carousel mt-3">
                         <div>
                             <div class="text-center">
-                                <img loading="lazy" src="https://binarytraders.net/img/check.svg" class="lazy mb-2 mx-auto"
+                                <img loading="lazy" src="img/check.svg" class="lazy mb-2 mx-auto"
                                      alt="Check illustrative icons">
                                 <h3 class="font-weight-bold">Descubre los beneficios de utilizar <span class="orange-id-color">señales de opciones binarias.</span>
                                 </h3>
@@ -799,7 +800,7 @@
         
                         <div>
                             <div class="text-center">
-                                <img loading="lazy" src="https://binarytraders.net/img/check.svg" class="lazy mb-2 mx-auto"
+                                <img loading="lazy" src="img/check.svg" class="lazy mb-2 mx-auto"
                                      alt="Check illustrative icons">
                                 <h3 class="font-weight-bold">Desbloquea tu potencial de negociación en el 
                                     <span class="orange-id-color">mercado de opciones binarias</span>
@@ -813,7 +814,7 @@
         
                         <div>
                             <div class="text-center">
-                                <img src="https://binarytraders.net/img/check.svg" class="lazy mb-2 mx-auto" alt="Check illustrative icons">
+                                <img src="img/check.svg" class="lazy mb-2 mx-auto" alt="Check illustrative icons">
                                 <h3 class="font-weight-bold">
                                     Aumenta tus ganancias diarias con nuestras 
                                     <span class="orange-id-color">
@@ -834,7 +835,7 @@
         <section class="easy-content pt-md-5 mobile-hidden pt-4">
             <div class="container py-5 bg-timeline">
                 <div class="row">
-                    <div class="col-md-4 pe-5">
+                    <div class="col-md-4 pe-5 reveal-photos">
                         <h2 class="font-weight-bold blue-id-color mb-2">Fácil de empezar</h2>
                         <div class="text-content pe-4">
                             <p>Mejora tu operaciones de opciones binarias con Obsignals y comienza a tener éxito hoy mismo.</p>
@@ -842,7 +843,7 @@
                         <a target="_blank"
                            href="https://chrome.google.com/webstore/detail/obsignals/amkbjfeoamfehgknhbnpggkkcmelkebb?hl=pt-PT"
                            class="chrome-download-button px-4 py-2 d-inline-flex rounded text-decoration-none align-items-center mt-2">
-                            <img class="lazy" loading="lazy" src="https://binarytraders.net/img/chrome-logo.svg" height="35" alt="Logo Google Chrome">
+                            <img class="lazy" loading="lazy" src="img/chrome-logo.svg" height="35" alt="Logo Google Chrome">
                             <div class="ms-2 text-start">
                                 <p class="text-white mb-0">Descargar para</p>
                                 <p class="text-white mb-0"><b>Google Chrome</b></p>
@@ -880,7 +881,7 @@
                         <a target="_blank"
                            href="https://chrome.google.com/webstore/detail/obsignals/amkbjfeoamfehgknhbnpggkkcmelkebb?hl=pt-PT"
                            class="chrome-download-button px-3 py-2 d-inline-flex rounded text-decoration-none align-items-center mt-1">
-                            <img class="lazy" loading="lazy" src="https://binarytraders.net/img/chrome-logo.svg" height="30" alt="Logo Google Chrome">
+                            <img class="lazy" loading="lazy" src="img/chrome-logo.svg" height="30" alt="Logo Google Chrome">
                             <div class="ms-2 text-start">
                                 <p class="text-white mb-0">Descargar para</p>
                                 <p class="text-white mb-0"><b>Google Chrome</b></p>
@@ -924,7 +925,7 @@
                         <div>
                             <div class="box-testmonial-content card-espanol text-start p-4">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img class="user-img" src="https://binarytraders.net/img/brian.jpg" alt="User">
+                                    <img class="user-img" data-src="img/brian.webp" alt="User">
                                     <div class="ms-3">
                                         <h3 class="font-weight-600 mb-0">Brian Patton</h3>
                                         <p class="mb-0">Canada</p>
@@ -934,14 +935,14 @@
                                 <p>He estado utilizando señales durante unos meses y estoy realmente impresionada con lo fácil
                                     que es usarlas. No soy una experta trader, pero con Obsignals puedo tomar decisiones
                                     informadas basadas en sus señales y he visto grandes resultados.</p>
-                                <img width="130" height="24.38" class="stars-img" src="https://binarytraders.net/img/stars.svg" alt="Stars Icon">
+                                <img width="130" height="24.38" class="stars-img" src="img/stars.svg" alt="Stars Icon">
                             </div>
                         </div>
         
                         <div>
                             <div class="box-testmonial-content card-espanol text-start p-4">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img class="user-img" src="https://binarytraders.net/img/imelda.jpg" alt="User">
+                                    <img class="user-img" data-src="img/imelda.webp" alt="User">
                                     <div class="ms-3">
                                         <h3 class="font-weight-600 mb-0">Imelda Cowen</h3>
                                         <p class="mb-0">Estados Unidos</p>
@@ -951,14 +952,14 @@
                                 <p>Estaba escéptica sobre el uso de señales de opciones binarias, pero Obsignals ha cambiado
                                     completamente mi opinión. Las señales son fáciles de entender, y me han ayudado a realizar
                                     operaciones rentables. ¡Estoy muy contenta de haber encontrado Obsignals!</p>
-                                <img width="130" height="24.38" class="stars-img" src="https://binarytraders.net/img/stars.svg" alt="Stars Icon">
+                                <img width="130" height="24.38" class="stars-img" src="img/stars.svg" alt="Stars Icon">
                             </div>
                         </div>
         
                         <div>
                             <div class="box-testmonial-content card-espanol text-start p-4">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img class="user-img" src="https://binarytraders.net/img/alfred.jpg" alt="User">
+                                    <img class="user-img" data-src="img/alfred.webp" alt="User">
                                     <div class="ms-3">
                                         <h3 class="font-weight-600 mb-0">Tiago Oliveira</h3>
                                         <p class="mb-0">Brasil</p>
@@ -968,14 +969,14 @@
                                 <p>Soy nuevo en el trading de opciones binarias, pero con Obsignals, he podido aprender
                                     rápidamente y realizar operaciones inteligentes. Sus señales son precisas y fáciles de usar,
                                     y ya he visto algunos excelentes retornos en mi inversión.</p>
-                                <img width="130" height="24.38" class="stars-img" src="https://binarytraders.net/img/stars.svg" alt="Stars Icon">
+                                <img width="130" height="24.38" class="stars-img" src="img/stars.svg" alt="Stars Icon">
                             </div>
                         </div>
         
                         <div>
                             <div class="box-testmonial-content card-espanol text-start p-4">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img class="user-img" src="https://binarytraders.net/img/user2.jpg" alt="User">
+                                    <img class="user-img" data-src="img/user2.webp" alt="User">
                                     <div class="ms-3">
                                         <h3 class="font-weight-600 mb-0">Lukas Müller</h3>
                                         <p class="mb-0">Holland</p>
@@ -985,14 +986,14 @@
                                 <p>He probado otros proveedores de señales en el pasado, pero ninguno ha sido tan efectivo como
                                     Obsignals. Sus señales son consistentemente precisas, y he podido realizar operaciones más
                                     rentables que nunca antes.</p>
-                                <img width="130" height="24.38" class="stars-img" src="https://binarytraders.net/img/stars.svg" alt="Stars Icon">
+                                <img width="130" height="24.38" class="stars-img" src="img/stars.svg" alt="Stars Icon">
                             </div>
                         </div>
         
                         <div>
                             <div class="box-testmonial-content card-espanol text-start p-4">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img class="user-img" src="https://binarytraders.net/img/user3.jpg" alt="User">
+                                    <img class="user-img" data-src="img/user3.webp" alt="User">
                                     <div class="ms-3">
                                         <h3 class="font-weight-600 mb-0">Ethan Johnson</h3>
                                         <p class="mb-0">Inglaterra</p>
@@ -1002,14 +1003,14 @@
                                 <p>
                                     Estaba indeciso sobre empezar a usar señales, pero Obsignals ha sido un cambio de juego para mí. Las señales son fáciles de usar y he visto retornos significativos en mi inversión. Recomendaría Obsignals a cualquiera que busque mejorar su estrategia de trading.
                                 </p>
-                                <img width="130" height="24.38" class="stars-img" src="https://binarytraders.net/img/stars.svg" alt="Stars Icon">
+                                <img width="130" height="24.38" class="stars-img" src="img/stars.svg" alt="Stars Icon">
                             </div>
                         </div>
         
                         <div>
                             <div class="box-testmonial-content card-espanol text-start p-4">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img class="user-img" src="https://binarytraders.net/img/user4.jpg" alt="">
+                                    <img class="user-img" data-src="img/user4.webp" alt="User">
                                     <div class="ms-3">
                                         <h3 class="font-weight-600 mb-0">Emily Roberts</h3>
                                         <p class="mb-0">Inglaterra</p>
@@ -1019,7 +1020,7 @@
                                 <p>
                                     Si eres serio acerca del trading de opciones binarias, necesitas usar Obsignals. Las señales son de primera calidad y el equipo detrás del proyecto siempre está actualizando la plataforma para mantenerse por delante de la competencia.
                                 </p>
-                                <img width="130" height="24.38" class="stars-img" src="https://binarytraders.net/img/stars.svg" alt="Stars Icon">
+                                <img width="130" height="24.38" class="stars-img" src="img/stars.svg" alt="Stars Icon">
                             </div>
                         </div>
         
@@ -1173,7 +1174,7 @@
                             </div>
         
                             <div class="accordion-item">
-                                <h2 class="accordion-header mb-0" id="panelsStayOpen-headingSeven">
+                                <h2 class="accordion-header mb-0 reveal-tools" id="panelsStayOpen-headingSeven">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
                                             aria-controls="panelsStayOpen-collapseSeven">
@@ -1262,7 +1263,7 @@
                     <span>
                         <div class="footer-column justify-content-between">
                             <div class="footer-logo">
-                                <img width="28.44" height="35" src="https://binarytraders.net/img/logo.svg" alt="Imagem da Logo"></a>
+                                <img width="28.44" height="35" src="img/logo.svg" alt="Imagem da Logo"></a>
                                 <p class="title-logo-white">BinaryTraders.<mark>net</mark></h4>
                             </div>
                             <div class="col-md-5">
@@ -1275,7 +1276,7 @@
                             <div class="download">
                                 <p>Download</p>
                                 <a href="https://chrome.google.com/webstore/detail/obsignals/amkbjfeoamfehgknhbnpggkkcmelkebb?hl=pt-PT" target="_blank" class="chrome-download-button-white px-3 py-2 d-inline-flex rounded text-decoration-none align-items-center">
-                                    <img width="30" height="30" class="lazy" loading="lazy" src="https://binarytraders.net/img/chrome-logo.svg" alt="Logo Google Chrome">
+                                    <img width="30" height="30" class="lazy" loading="lazy" src="img/chrome-logo.svg" alt="Logo Google Chrome">
                                     <div class="ms-2">
                                         <p class="mb-0">Descargar para</p>
                                         <p class="mb-0"><b>Google Chrome</b></p>
@@ -1286,13 +1287,13 @@
                                 <p>Síguenos</p>
                                 <span class="social-media-links">
                                     <a href="https://t.me/obsignals_oficial" target="_blank">
-                                        <img width="22.84" height="20" src="https://binarytraders.net/img/telegram.svg" alt="Telegram">
+                                        <img class="desktop-icon" width="22.84" height="20" data-src="img/telegram.webp" alt="Telegram">
                                     </a>
-                                    <a href="#">
-                                        <img width="14" height="24" src="https://binarytraders.net/img/facebook.svg" alt="Facebook">
+                                    <a href="javascript:void(0)">
+                                        <img class="desktop-icon" width="14" height="24" data-src="img/facebook.webp" alt="Facebook">
                                     </a>
-                                    <a href="#">
-                                        <img width="24" height="24" src="https://binarytraders.net/img/instagram.svg" alt="Instagram">
+                                    <a href="javascript:void(0)">
+                                        <img class="desktop-icon" width="24" height="24" data-src="img/instagram.webp" alt="Instagram">
                                     </a>
                                 </span>
                             </div>
@@ -1300,7 +1301,7 @@
                     </span>
                     <div class="text-content p-4 risc-warning">
                         <small class="fw-light">
-                            <img width="15" height="15" src="https://binarytraders.net/img/important.svg" alt="Illustrative Icon">
+                            <img class="desktop-icon" width="15" height="15" data-src="img/important.svg" alt="Illustrative Icon">
                             <strong class="font-weight-600">Advertencia de riesgo:</strong>
                             Ten en cuenta que operar con opciones binarias implica un alto riesgo y tu capital está en peligro.
                             Existe la posibilidad de perder tu inversión y, como tal, las opciones binarias se consideran una clase de activos de alto riesgo.
@@ -1319,7 +1320,7 @@
         
         <div class="risc-warning-mobile">
             <small class="fw-light px-4 py-3">
-                <img src="https://binarytraders.net/img/important-mobile.svg" alt="Illustrative Icon">
+                <img class="mobile-icon" data-src="img/important-mobile.svg" alt="Illustrative Icon">
                 <strong class="font-weight-600">Advertencia de riesgo:</strong>
                  Ten en cuenta que operar con opciones binarias implica un alto riesgo y tu capital está en peligro
                  <br>
@@ -1351,13 +1352,13 @@
                 <p class="text-white" style="font-weight: 401;">Síguenos</p>
                 <span class="social-media-links-mobile">
                     <a href="https://t.me/obsignals_oficial" target="_blank">
-                        <img height="20" src="https://binarytraders.net/img/telegram-mobile-icon.svg" alt="Telegram">
+                        <img class="mobile-icon" height="20" data-src="img/telegram-mobile-icon.svg" alt="Telegram">
                     </a>
-                    <a href="#">
-                        <img height="24" src="https://binarytraders.net/img/facebook-mobile-icon.svg" alt="Facebook">
+                    <a href="javascript:void(0)">
+                        <img class="mobile-icon" height="24" data-src="img/facebook-mobile-icon.svg" alt="Facebook">
                     </a>
-                    <a href="#">
-                        <img height="24" src="https://binarytraders.net/img/instagram-mobile-icon.svg" alt="Instagram">
+                    <a href="javascript:void(0)">
+                        <img class="mobile-icon" height="24" data-src="img/instagram-mobile-icon.svg" alt="Instagram">
                     </a>
                 </span>
             </div>
@@ -1368,19 +1369,31 @@
         </div>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <script src="https://binarytraders.net/js/jquery-3.6.3.min.js"></script>
-    <script type="text/javascript" src="https://binarytraders.net/slick/slick.min.js"></script>
-    <script src="https://binarytraders.net/js/carousel.min.js"></script>
-    <script src="https://binarytraders.net/js/textFit.min.js"></script>
-    <script src="https://binarytraders.net/js/index.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/carousel.min.js"></script>
+    <script src="js/textFit.min.js"></script>
+    <script src="js/index.min.js?v=1.0"></script>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
-    <link media="screen" rel="stylesheet" type="text/css" href="https://binarytraders.net/slick/slick.min.css"/>
-    <link media="screen" rel="stylesheet" type="text/css" href="https://binarytraders.net/slick/slick-theme.min.css"/>
+    <link media="screen" rel="stylesheet" type="text/css" href="slick/slick.min.css"/>
+    <link media="screen" rel="stylesheet" type="text/css" href="slick/slick-theme.min.css"/>
     <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"></script>
-    <script async src="https://binarytraders.net/js/base.min.js"></script>
+    <script async src="js/base.min.js"></script>
+    <script>
+        // Verifica se o Service Worker é suportado pelo navegador
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(function(registration) {
+              console.log('Service Worker registrado com sucesso:', registration);
+            })
+            .catch(function(error) {
+              console.log('Falha ao registrar o Service Worker:', error);
+            });
+        }
+      </script>
 </body>
 </html>

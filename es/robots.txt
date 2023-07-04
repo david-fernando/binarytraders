@@ -1,5 +1,2 @@
-Sitemap: https://binarytraders.net/sitemap.xml
+Sitemap: https://es.binarytraders.net/sitemap.xml
 User-Agent: *
-Disallow: /*.html
-Disallow: /*.html$
-Disallow: /#

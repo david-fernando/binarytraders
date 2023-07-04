@@ -31,13 +31,14 @@ button:focus-visible {
 }
 
 .title-logo-white {
-  font-family: 'Inter', 'sans-serif';
+  font-family: 'Inter','sans-serif';
   font-weight: 600;
   color: #fff;
   font-size: 20px;
   position: relative;
   top: 3px;
-  right: 11px;
+  right: 12px;
+  letter-spacing: 0px !important;
 }
 
 .title-logo-white > mark {
@@ -287,14 +288,26 @@ footer .text-content {
   right: 7.89rem;
 }
 
-.header-background-top > .background-content {
-  height: 100%;
-  width: 16rem;
-  background-image: url(../img/header-background-top.png);
-  background-size: 40% 100%;
-  background-repeat: no-repeat;
-  background-position: 24%;
-  transform: rotate(-31deg) scale(2.3) translateX(16px);
+@media (min-width:1007px){
+  .header-background-top > .background-content {
+    height: 100%;
+    width: 16rem;
+    background-image: url(../img/header-background-top.png);
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+    background-position: 24%;
+    transform: rotate(-31deg) scale(2.3) translateX(16px);
+  }
+
+  .header-background-bottom > .background-content {
+    height: 100%;
+    width: 16rem;
+    background-image: url(../img/header-background-bottom.png);
+    background-size: 38% 100%;
+    background-repeat: no-repeat;
+    background-position: 26%;
+    transform: rotate(-31deg) scale(2.5) translateX(-2px);
+  }
 }
 
 .header-background-bottom {
@@ -305,16 +318,6 @@ footer .text-content {
 .portuguese-content-row {
   padding-right: 0px !important;
   padding-left: 0px !important;
-}
-
-.header-background-bottom > .background-content {
-  height: 100%;
-  width: 16rem;
-  background-image: url(../img/header-background-bottom.png);
-  background-size: 38% 100%;
-  background-repeat: no-repeat;
-  background-position: 26%;
-  transform: rotate(-31deg) scale(2.5) translateX(-2px);
 }
 
 .tools-images {

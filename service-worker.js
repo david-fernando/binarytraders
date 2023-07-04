@@ -1,4 +1,4 @@
-const cacheName = 'cache-v1';
+const cacheName = 'cache-v2';
 
 // Arquivos para armazenar em cache
 const filesToCache = [

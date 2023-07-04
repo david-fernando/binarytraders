@@ -631,7 +631,7 @@ header .navbar-toggler {
 }
 
 .solution-content {
-  background-image: url("../img/mapbase-bg.png");
+  background-image: url("../img/mapbase-bg.webp");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 70%;

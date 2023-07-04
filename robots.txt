@@ -1,9 +1,2 @@
 Sitemap: https://binarytraders.net/sitemap.xml
 User-Agent: *
-Disallow: /LICENSE
-Disallow: /*.html
-Disallow: /*.html$
-Disallow: /#
-Disallow: /README.md
-Disallow: /.htsccess
-Disallow: /.gitignore

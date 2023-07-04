@@ -67,14 +67,98 @@ function changeTab(itemNumber) {
   
 }
 
-window.onbeforeunload = ()=>{
-  const page = window.location.pathname
+function loadLazyImages(){
+  const bannerLazy = document.querySelector('.banner-lazy')
+  const bannerMobileLazy = document.querySelector('.banner-mobile-lazy')
+  const desktopIcons = document.querySelectorAll('.desktop-icon')
+  const mobileIcons = document.querySelectorAll('.mobile-icon')
+  
+  const windowWidth = window.innerWidth
 
-  if(page !== '/'){
+  const isMobile = windowWidth <= 1006
+
+  if(isMobile){
+    bannerMobileLazy.src = bannerMobileLazy.dataset.src
+    mobileIcons.forEach((image) => {
+      image.src = image.dataset.src
+    })
     return;
   }
-  return localStorage.removeItem('chosen-language')
+
+  bannerLazy.src = bannerLazy.dataset.src
+
+  desktopIcons.forEach((image) => {
+    image.src = image.dataset.src
+  })
+  return;
 }
 
+function loadImageOnScroll(){
+  function revealTools(){
+    const revealTools = document.querySelector('.reveal-tools')
+    const logosGraph = document.querySelector('.logos-graph')
+
+    const windowHeight = window.innerHeight
+
+    const revealToolsPosition = revealTools.getBoundingClientRect().top
+
+    if(revealToolsPosition < windowHeight){
+      logosGraph.src = logosGraph.dataset.src
+    }
+  }
+
+  function revealPhotos(){
+    const revealPhotos = document.querySelector('.reveal-photos')
+    const userImage = document.querySelectorAll('.user-img')
+
+    const windowHeight = window.innerHeight
+
+    const revealPhotosPosition = revealPhotos.getBoundingClientRect().top
+
+    if(revealPhotosPosition < windowHeight){
+      userImage.forEach((image)=>{
+        image.src = image.dataset.src
+      })
+    }
+  }
+
+  revealTools()
+  revealPhotos()
+}
+
+function removeCookie(){
+  const page = window.location.host
+
+  setTimeout(() =>{
+    if(page === 'binarytraders.net'){
+      return document.cookie = "chosen-language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.binarytraders.net";
+    }
+  }, 2500)
+  return;
+}
+
+function redirectToHome(){
+  const host = window.location.host
+  const pathname = window.location.pathname
+  const origin = window.location.origin
+  const url = 'localhost:5500'
+
+  const pathHaveString = pathname === '/index.html' || pathname === '/#'
+
+  if(host.includes(url) && pathHaveString){
+    window.location.href = origin
+  }
+}
+
+window.onload = ()=>{
+  removeCookie();
+  loadLazyImages()
+}
+
+window.onscroll = () => {
+  loadImageOnScroll()
+}
+
+redirectToHome()
 showMoreText()
 textFit(document.getElementsByClassName('header-text'), {minFontSize:34, maxFontSize:42})
