@@ -44,3 +44,9 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
 .form-select {
   padding-top: 0.449rem !important;
 }
+
+@media (max-width: 700px) {
+  .catalog-icon {
+    bottom: 1.1px;
+  }
+}
