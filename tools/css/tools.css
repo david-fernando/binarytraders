@@ -18,6 +18,7 @@ select, select optgroup, select:active {
 
 .catalog-button-text {
   font-weight: 500 !important;
+  color: #505056;
 }
 
 .catalog-button {
