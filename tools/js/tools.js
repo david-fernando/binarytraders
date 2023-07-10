@@ -1,35 +1,33 @@
-// Obtenha o elemento <select >
 const select = document.getElementById("my-select");
 
-// Adicione um evento para quando uma opção for selecionada
 select.addEventListener("change", function () {
     const selectedItems = [];
-    // Obtenha todas as opções selecionadas
-    const options = select.selectedOptions;
-    for (let i = 0; i < options.length; i++) {
-        const value = options[i].value;
-        // Crie um elemento <div> para cada item selecionado
+    const selectedOptions = select.selectedOptions;
+    const selected = document.querySelectorAll('.selected-item')
+    selectedItems.push([...selectedOptions])
+    for (let index = 0; index < selectedOptions.length; index++) {
+        const value = selectedOptions[index].value;
         const item = document.createElement("div");
-        item.classList.add("selected-item");
-        // Adicione o valor da opção como texto
-        item.textContent = value;
-        // Crie um elemento <span> com o texto "X" para remover o item
-        const removeBtn = document.createElement("span");
-        removeBtn.textContent = "X";
-        // Adicione um evento para remover o item quando o botão "X" for clicado
-        removeBtn.addEventListener("click", function () {
-            const index = selectedItems.indexOf(value);
-            if (index !== -1) {
-                selectedItems.splice(index, 1);
-                item.remove();
-            }
-        });
-        // Adicione o botão "X" ao elemento <div> do item selecionado
-        item.appendChild(removeBtn);
-        // Adicione o elemento <div> ao elemento "selected-items"
-        document.getElementById("selected-items").appendChild(item);
-        // Adicione o valor da opção selecionada ao array "selectedItems"
-        selectedItems.push(value);
+        const addOptions = () =>{
+            item.classList.add("selected-item");
+            item.textContent = value;
+        }
+        const closeButton = document.createElement("span");
+        closeButton.textContent = "X";
+        const removeOption = () => {
+            item.appendChild(closeButton);
+            closeButton.addEventListener("click", function () {
+                const index = selectedItems.indexOf(value);
+                if (index !== -1) {
+                    selectedItems.splice(index, 1);
+                    item.remove();
+                }
+            });
+            document.getElementById("selected-items").appendChild(item);
+        }
+        console.log(selectedItems)
+        addOptions()
+        removeOption()
     }
 });
 
