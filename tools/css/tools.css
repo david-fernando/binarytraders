@@ -1,0 +1,11 @@
+form-control::placeholder {
+  color: black !important;
+}
+
+select, select:active {
+  color: #5f5f5f !important;
+}
+
+.description {
+  color: #505056;
+}
