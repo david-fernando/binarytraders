@@ -9,3 +9,12 @@ select, select optgroup, select:active {
 .description {
   color: #505056;
 }
+
+.catalog-icon {
+  position: relative;
+  bottom: 2px;
+}
+
+.catalog-button-text {
+  font-weight: 500 !important;
+}
