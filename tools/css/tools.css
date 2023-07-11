@@ -24,6 +24,10 @@ select, select optgroup, select:active {
   color: #637381 !important
 }
 
+.border-light-color {
+  border: 1px solid #637381 !important;
+}
+
 .dark-font-color {
   color: #212b36 !important;
 }
