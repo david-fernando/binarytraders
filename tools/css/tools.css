@@ -40,8 +40,11 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   line-height: 1.5rem !important;
 }
 
-.btn-outline-secondary:hover > strong {
+.btn-outline-secondary:hover{
   background-color: #ff7a27;
-  border-color: #ff7a27;
+  border-color: #ff7a27 !important;
+}
+
+.btn-outline-secondary:hover > strong {
   color: #fff;
 }
