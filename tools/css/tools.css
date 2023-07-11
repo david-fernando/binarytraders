@@ -42,9 +42,9 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   color: #505056 !important;
 }
 
-/* .form-select {
-  padding-top: 0.450rem !important;
-} */
+.form-select {
+  line-height: 1.5rem !important;
+}
 
 .btn-outline-secondary:hover > strong {
   background-color: #ff7a27;
