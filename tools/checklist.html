@@ -22,36 +22,10 @@
     <meta property="og:image:alt" content="Logo Binary Options">
 
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/tools.css">
     <link media="screen" href="css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous"
           async>
-
-
-    <style>
-        .accordion-content .btn-see-more.collapsed:after {
-            content: '+ Show More';
-        }
-
-        .accordion-content .btn-see-more:not(.collapsed):after {
-            content: '- Show Less';
-        }
-
-        @media (max-width: 980px) {
-            .skill-mb-text1 {
-                margin-left: -12px !important;
-                margin-right: 11px;
-            }
-
-            .skill-mb-text3 {
-                margin-left: -20px;
-                margin-right: 7px;
-            }
-
-            .skill-mb-text4 {
-                margin-left: -7px;
-            }
-        }
-    </style>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YS5QJ1BND"></script>
@@ -69,89 +43,6 @@
 
 </head>
 <body>
-<div class="header desk-hidden">
-
-    <ul class="menu">
-        <li class="menu-item">
-            <a href="index.html">Home</a>
-        </li>
-        <li class="menu-item">
-            <a href="#">Tools</a>
-        </li>
-        <li class="menu-item">
-            <a href="#">Strategies</a>
-        </li>
-        <li class="menu-item">
-            <a href="#">Blog</a>
-        </li>
-
-        <div class="btn-translate mt-2">
-            <div class="dropdown">
-                <button class="btn ps-0 btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false">
-        <span>
-            <img src="https://cdn.gtranslate.net/flags/svg/en-us.svg" alt="en">
-            EN
-        </span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-
-                    <li>
-                        <a class="dropdown-item" href="https://fr.binarytraders.net">
-                <span>
-                <img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/fr.svg" alt="fr"
-                     src="https://cdn.gtranslate.net/flags/svg/fr.svg">
-                     French
-                </span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item" href="https://de.binarytraders.net">
-                <span>
-                <img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/de.svg" alt="de"
-                     src="https://cdn.gtranslate.net/flags/svg/de.svg">
-                     German
-                </span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item" href="https://it.binarytraders.net">
-                <span>
-                <img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/it.svg" alt="it"
-                     src="https://cdn.gtranslate.net/flags/svg/it.svg">
-                     Italian
-                </span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item" href="https://es.binarytraders.net">
-                <span>
-                <img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/es.svg" alt="es"
-                     src="https://cdn.gtranslate.net/flags/svg/es.svg">
-                     Spanish
-                </span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item" href="https://pt.binarytraders.net">
-                <span>
-                <img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/pt-br.svg" alt="pt"
-                     src="https://cdn.gtranslate.net/flags/svg/pt-br.svg">
-                     Portuguese
-                </span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </ul>
-</div>
 
 <div class="mobile-tools-menu desk-hidden">
     <div class="container-fluid">
@@ -357,10 +248,11 @@
                         </div>
 
                         <div style="margin-bottom: -6px;" class="text-center mt-4">
-                            <button type="button"
-                                    class="btn px-4 d-inline-flex align-items-center btn-outline-secondary">
-                                <img src="img/send-icon.svg" alt="Icon" height="16" class="me-2">
-                                <strong>Check</strong>
+                            <button 
+                              type="button"
+                              class="btn px-4 d-inline-flex align-items-center btn-outline-secondary catalog-button"
+                            >
+                              <strong class="catalog-button-text">Check</strong>
                             </button>
                         </div>
                     </form>
