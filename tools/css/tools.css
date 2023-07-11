@@ -10,12 +10,6 @@ select, select optgroup, select:active {
   color: #505056;
 }
 
-.catalog-icon {
-  position: relative;
-  bottom: 1.8px;
-  color: #505056 !important;
-}
-
 .catalog-button-text {
   font-weight: 500 !important;
   color: #505056;
@@ -50,14 +44,4 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   background-color: #ff7a27;
   border-color: #ff7a27;
   color: #fff;
-}
-
-.disaplayInput{
-  display: none;
-}
-
-@media (max-width: 700px) {
-  .catalog-icon {
-    bottom: 1.7px;
-  }
 }
