@@ -1,6 +1,6 @@
-form-control::placeholder {
+/* form-control::placeholder {
   color: black !important;
-}
+} */
 
 select, select optgroup, select:active {
   color: #637381 !important;
@@ -52,6 +52,10 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   border-color: #dee2e6 !important;
 }
 
+.form-control {
+  --bs-form-select-bg-img: url('../img/selectIcon.svg') !important;
+}
+
 .selected-items {
   border-top: 1px solid #dee2e6;
 }
@@ -60,10 +64,6 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   border: 1px solid #dee2e6;
   border-radius: 0.375rem !important;
 }
-
-/* #acurracy::placeholder {
-
-} */
 
 .btn-outline-secondary:hover{
   background-color: #ff7a27;
