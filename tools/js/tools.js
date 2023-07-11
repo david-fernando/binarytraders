@@ -4,14 +4,12 @@ select.addEventListener("change", function () {
     const selectedItems = [];
     const selectedOptions = select.selectedOptions;
     let previousValue = []
+    let closeButton = null
     for (let index = 0; index < selectedOptions.length; index++) {
         const value = selectedOptions[index].value;
         const item = document.createElement("div");
         const addOptions = (selectedItem) => {
             const currentValue = value
-            console.log(previousValue)
-            console.log(currentValue)
-            console.log(previousValue.includes(value))
             selectedItem.forEach((item) => {
                 previousValue.push(item.innerText.replace('\nX', ''))
             });
@@ -24,12 +22,18 @@ select.addEventListener("change", function () {
                     }
                 });
             }
+            if(previousValue.includes(currentValue)){
+                return item.remove();
+            }
             item.classList.add("selected-item");
             item.textContent = value;
+            closeButton = document.createElement("span");
+            closeButton.textContent = "X";
         }
-        const closeButton = document.createElement("span");
-        closeButton.textContent = "X";
         const removeOption = () => {
+            if(closeButton === null){
+                return;
+            }
             item.appendChild(closeButton);
             closeButton.addEventListener("click", () => {
                 if(selectedItems.includes(value)){
@@ -45,40 +49,6 @@ select.addEventListener("change", function () {
         selectedItems.push(value);
     }
 });
-
-// const mySelect = document.getElementById("textSelect");
-// const inputOther = document.getElementById("form12");
-// const labelInput = document.getElementById("inputLabel");
-// const divInput = document.getElementById("inputDiv");
-// const selectDiv = document.getElementById("textSelectdiv");
-
-// mySelect.addEventListener('optionSelect.mdb.select', function(e){
-// const SelectValue = document.getElementById('textSelect').value;
-// if (SelectValue === 'customOption') {
-// inputOther.style.display='inline';
-// inputOther.removeAttribute('disabled');
-// labelInput.classList.remove('disaplayInput');
-// divInput.classList.remove('disaplayInput');
-// selectDiv.style.display='none';
-// inputOther.focus();
-// mySelect.disabled = 'true';
-
-// } else {
-// a.style.display='none';
-// }
-// })
-
-// function hideInput(){
-// if (inputOther !== null && inputOther.value === "")
-// {
-// inputOther.style.display='none';
-// inputOther.setAttribute('disabled', '');
-// selectDiv.style.display='inline';
-// mySelect.removeAttribute('disabled');
-// labelInput.classList.add('disaplayInput');
-// divInput.classList.add('disaplayInput');
-// }
-// }
 
 $(document).ready(function () {
     $(".text-list").on("mousedown", function (e) {
