@@ -26,9 +26,9 @@ select, select optgroup, select:active {
   border: 1px solid #dee2e6 !important;
 }
 
-.form-select {
+/* .form-select {
   --bs-form-select-bg-img: url('../img/selectIcon.svg') !important;
-}
+} */
 
 .--bs-form-select-bg-img {
   font-size: 16px !important;
