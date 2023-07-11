@@ -43,7 +43,7 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
 }
 
 .form-select {
-  padding-top: 0.460rem !important;
+  padding-top: 0.450rem !important;
 }
 
 .btn-outline-secondary:hover > strong {
