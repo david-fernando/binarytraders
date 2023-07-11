@@ -48,6 +48,6 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
 
 @media (max-width: 700px) {
   .catalog-icon {
-    bottom: 1.2px;
+    bottom: 1.3px;
   }
 }
