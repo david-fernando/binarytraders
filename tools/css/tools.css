@@ -3,25 +3,25 @@ form-control::placeholder {
 }
 
 select, select optgroup, select:active {
-  color: #637381 !important;
+  color: #dfe3e8 !important;
 }
 
 .description {
-  color: #637381;
+  color: #dfe3e8;
 }
 
 .catalog-button-text {
   font-weight: 500 !important;
-  color: #637381;
+  color: #dfe3e8;
 }
 
 .catalog-button {
   gap: 6px;
-  border: 1px solid #637381 !important;
+  border: 1px solid #dfe3e8 !important;
 }
 
 .light-font-color {
-  color: #637381 !important
+  color: #dfe3e8 !important
 }
 
 .border-light-color {
@@ -41,7 +41,7 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
 }
 
 .nav-link.active > img {
-  color: #637381 !important;
+  color: #dfe3e8 !important;
 }
 
 .form-select {
