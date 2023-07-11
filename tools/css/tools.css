@@ -45,7 +45,7 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
 }
 
 .form-select, input {
-  border: 1px solid #c4cdd5 !important;
+  border-color: #c4cdd5 !important;
 }
 
 .btn-outline-secondary:hover{
