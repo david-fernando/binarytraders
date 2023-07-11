@@ -48,6 +48,15 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   border-color: #c4cdd5 !important;
 }
 
+.selected-items {
+  border-top: 1px solid #c4cdd5;
+}
+
+.currency-content {
+  border: 1px solid #c4cdd5;
+  border-radius: 0.375rem !important;
+}
+
 .btn-outline-secondary:hover{
   background-color: #ff7a27;
   border-color: #ff7a27 !important;
