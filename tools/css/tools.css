@@ -33,7 +33,7 @@ select, select optgroup, select:active {
 }
 
 label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
-  color: #141822 !important;
+  color: #212b36 !important;
 }
 
 .nav-link.active > img {
