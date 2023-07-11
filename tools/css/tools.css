@@ -21,7 +21,7 @@ select, select optgroup, select:active {
 }
 
 .dark-font-color {
-  color: #212b36;
+  color: #212b36 !important;
 }
 
 /* .form-select {
