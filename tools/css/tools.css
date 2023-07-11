@@ -52,7 +52,7 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   border-color: #dee2e6 !important;
 }
 
-.form-control {
+.form-select {
   --bs-form-select-bg-img: url('../img/selectIcon.svg') !important;
 }
 
