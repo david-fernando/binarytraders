@@ -23,9 +23,10 @@
 
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/tools.css">
-    <link media="screen" href="css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- <link media="screen" href="css/bootstrap.min.css" rel="stylesheet"
           crossorigin="anonymous"
-          async>
+          async> -->
 
     <style>
         .accordion-content .btn-see-more.collapsed:after {
@@ -208,17 +209,48 @@
                                 <option value="UTC+14:00">UTC+14:00</option>
                             </select>
                         </div> -->
-
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              Dropdown
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                              <button class="dropdown-item" type="button">Action</button>
-                              <button class="dropdown-item" type="button">Another action</button>
-                              <button class="dropdown-item" type="button">Something else here</button>
-                            </div>
-                          </div>
+   
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="UTC-12:00">UTC-12:00</option>
+                            <option value="UTC-11:00">UTC-11:00</option>
+                            <option value="UTC-10:00">UTC-10:00</option>
+                            <option value="UTC-09:30">UTC-09:30</option>
+                            <option value="UTC-09:00">UTC-09:00</option>
+                            <option value="UTC-08:00">UTC-08:00</option>
+                            <option value="UTC-07:00">UTC-07:00</option>
+                            <option value="UTC-06:00">UTC-06:00</option>
+                            <option value="UTC-05:00">UTC-05:00</option>
+                            <option value="UTC-04:30">UTC-04:30</option>
+                            <option value="UTC-04:00">UTC-04:00</option>
+                            <option value="UTC-03:30">UTC-03:30</option>
+                            <option value="UTC-03:00" selected>UTC-03:00</option>
+                            <option value="UTC-02:00">UTC-02:00</option>
+                            <option value="UTC-01:00">UTC-01:00</option>
+                            <option value="UTC+00:00">UTC+00:00</option>
+                            <option value="UTC+01:00">UTC+01:00</option>
+                            <option value="UTC+02:00">UTC+02:00</option>
+                            <option value="UTC+03:00">UTC+03:00</option>
+                            <option value="UTC+03:30">UTC+03:30</option>
+                            <option value="UTC+04:00">UTC+04:00</option>
+                            <option value="UTC+04:30">UTC+04:30</option>
+                            <option value="UTC+05:00">UTC+05:00</option>
+                            <option value="UTC+05:30">UTC+05:30</option>
+                            <option value="UTC+05:45">UTC+05:45</option>
+                            <option value="UTC+06:00">UTC+06:00</option>
+                            <option value="UTC+06:30">UTC+06:30</option>
+                            <option value="UTC+07:00">UTC+07:00</option>
+                            <option value="UTC+08:00">UTC+08:00</option>
+                            <option value="UTC+08:45">UTC+08:45</option>
+                            <option value="UTC+09:00">UTC+09:00</option>
+                            <option value="UTC+09:30">UTC+09:30</option>
+                            <option value="UTC+10:00">UTC+10:00</option>
+                            <option value="UTC+10:30">UTC+10:30</option>
+                            <option value="UTC+11:00">UTC+11:00</option>
+                            <option value="UTC+12:00">UTC+12:00</option>
+                            <option value="UTC+12:45">UTC+12:45</option>
+                            <option value="UTC+13:00">UTC+13:00</option>
+                            <option value="UTC+14:00">UTC+14:00</option>
+                          </select>
 
                         <div class="form-group">
                             <label for="daylist">Signals For</label>
@@ -502,9 +534,11 @@
 
 <script src="js/jquery-3.6.3.min.js"></script>
 <script src="js/tools.js"></script>
-<script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<!-- <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 <script>
     var clickDelay = 500,
         clickDelayTimer = null;
