@@ -3,21 +3,25 @@ form-control::placeholder {
 }
 
 select, select optgroup, select:active {
-  color: #505056 !important;
+  color: #637381 !important;
 }
 
 .description {
-  color: #505056;
+  color: #637381;
 }
 
 .catalog-button-text {
   font-weight: 500 !important;
-  color: #505056;
+  color: #637381;
 }
 
 .catalog-button {
   gap: 6px;
   border: 1px solid #dee2e6 !important;
+}
+
+.dark-font-color {
+  color: #212b36;
 }
 
 /* .form-select {
@@ -33,11 +37,15 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
 }
 
 .nav-link.active > img {
-  color: #505056 !important;
+  color: #637381 !important;
 }
 
 .form-select {
   line-height: 1.5rem !important;
+}
+
+.form-select, input {
+  border: 1px solid #c4cdd5;
 }
 
 .btn-outline-secondary:hover{
