@@ -4,7 +4,6 @@ select.addEventListener("change", function () {
     const selectedItems = [];
     const selectedOptions = select.selectedOptions;
     const selected = document.querySelectorAll('.selected-item')
-    selectedItems.push([...selectedOptions])
     for (let index = 0; index < selectedOptions.length; index++) {
         const value = selectedOptions[index].value;
         const item = document.createElement("div");
@@ -25,9 +24,9 @@ select.addEventListener("change", function () {
             });
             document.getElementById("selected-items").appendChild(item);
         }
-        console.log(selectedItems)
         addOptions()
         removeOption()
+        selectedItems.push(value);
     }
 });
 
