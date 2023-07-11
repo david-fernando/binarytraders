@@ -6,8 +6,12 @@ select, select optgroup, select:active {
   color: #595c5f !important;
 }
 
+label, p {
+  font-size: 15px;
+}
+
 *, input::placeholder {
-  letter-spacing: -0.32px;
+  letter-spacing: 0.3px;
 }
 
 h3, .font-weight-500 {
