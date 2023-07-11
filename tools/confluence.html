@@ -263,9 +263,9 @@
                             </select>
                         </div>
 
-                        <h5 class="text-center mt-3">Confluence</h5>
+                        <h5 style="position: relative; top: 0.5px;" class="text-center mt-3">Confluence</h5>
 
-                        <div class="form-group mt-2 mt-md-4 pt-1">
+                        <div class="form-group mt-3 pt-2">
                             <label for="days1">Assertiveness</label>
                             <input class="form-control" id="days1" type="number" placeholder="%">
                         </div>
@@ -526,27 +526,8 @@
         }
     };
 
-    (function () {
-        const burger = document.querySelector('.burger-container');
-        const header = document.querySelector('.header');
-
-        burger.addEventListener('click', function () {
-            header.classList.toggle('menu-opened');
-        });
-
-    })();
-
     $('.navTrigger').click(function () {
         $(this).toggleClass('active');
-    });
-
-    $(document).on('click', function (e) {
-        const target = e.target;
-        const header = $('.header');
-        if (!$(target).closest('.header').length && header.hasClass('menu-opened')) {
-            header.removeClass('menu-opened');
-            $('.navTrigger').removeClass('active');
-        }
     });
 
 </script>
