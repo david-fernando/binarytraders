@@ -48,8 +48,12 @@ h3, .font-weight-500 {
   font-size: 16px !important;
 }
 
-label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
+label, .active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   color: #212529 !important;
+}
+
+.nav-link > p {
+  color: #595c5f !important;
 }
 
 .form-select, .form-control {
