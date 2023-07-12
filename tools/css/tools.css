@@ -1,5 +1,13 @@
+html {
+  --dark: #212529;
+  --mid-gray: #595c5f;
+  --silver: #c4cdd5;
+  --platinum: #dee2e6;
+}
+
+
 select, select optgroup, select:active {
-  color: #595c5f !important;
+  color: var(--mid-gray) !important;
 }
 
 label, .description, .catalog-button-text {
@@ -19,21 +27,21 @@ h3, .font-weight-500 {
 }
 
 .description {
-  color: #595c5f;
+  color: var(--mid-gray);
 }
 
 .catalog-button-text {
   font-weight: 500 !important;
-  color: #595c5f;
+  color: var(--mid-gray);
 }
 
 .catalog-button {
   gap: 6px;
-  border: 1px solid #c4cdd5 !important;
+  border: 1px solid var(--silver) !important;
 }
 
 .light-font-color {
-  color: #595c5f !important
+  color: var(--mid-gray) !important
 }
 
 .border-light-color {
@@ -41,7 +49,7 @@ h3, .font-weight-500 {
 }
 
 .dark-font-color {
-  color: #212529 !important;
+  color: var(--dark) !important;
 }
 
 .--bs-form-select-bg-img {
@@ -49,11 +57,11 @@ h3, .font-weight-500 {
 }
 
 label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
-  color: #212529 !important;
+  color: var(--dark) !important;
 }
 
 .nav-link > p {
-  color: #595c5f !important;
+  color: var(--mid-gray) !important;
 }
 
 .form-select, .form-control {
