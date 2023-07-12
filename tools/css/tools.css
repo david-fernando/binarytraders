@@ -6,8 +6,12 @@ select, select optgroup, select:active {
   color: #595c5f !important;
 }
 
-label, p, .description, .catalog-button-text {
+label, .description, .catalog-button-text {
   font-size: 15px !important;
+}
+
+.nav-link.active > p {
+  font-size: 16px;
 }
 
 *, input::placeholder {
