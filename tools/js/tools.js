@@ -5,6 +5,11 @@ select.addEventListener("change", function () {
     const selectedOptions = select.selectedOptions;
     let previousValue = []
     let closeButton = null
+    const cryptoAssets = [
+        'BTCUSD',
+        'ETHUSD',
+        'LTCUSD'
+    ]
     for (let index = 0; index < selectedOptions.length; index++) {
         const value = selectedOptions[index].value;
         const item = document.createElement("div");
@@ -13,13 +18,19 @@ select.addEventListener("change", function () {
             selectedItem.forEach((item) => {
                 previousValue.push(item.innerText.replace('\nX', ''))
             });
-            if((previousValue.includes('All OTC Assets') && currentValue === 'All Assets') || (previousValue.includes('All Assets') && currentValue === 'All OTC Assets')){
+
+            const includeCrypto = previousValue.includes('BTCUSD-BT') || previousValue.includes('ETHUSD-BT') || previousValue.includes('LTCUSD-BT')
+            const isCrypto = currentValue.includes('-BT')
+            const includeAllOTC = previousValue.includes('All OTC Assets')
+            const includeAllAssets = previousValue.includes('All Assets')
+            const isOTC = currentValue === 'All OTC Assets'
+            const isAllAssets = currentValue === 'All Assets'
+            const includeOTC = currentValue.includes('-OTC')
+
+            if(includeAllOTC || includeAllAssets || isOTC || isAllAssets || (includeOTC && includeCrypto) || (isCrypto && !includeCrypto)){
                 selectedItems.splice(index, 1);
                 selectedItem.forEach((item) => {
-                    const text = item.innerText.replace('\nX', '')
-                    if(text === 'All OTC Assets' || text === 'All Assets'){
-                        item.remove()
-                    }
+                    item.remove()
                 });
             }
             if(previousValue.includes(currentValue)){
