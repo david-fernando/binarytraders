@@ -5,7 +5,6 @@ html {
   --platinum: #dee2e6;
 }
 
-
 select, select optgroup, select:active {
   color: var(--mid-gray) !important;
 }
@@ -50,6 +49,26 @@ h3, .font-weight-500 {
 
 .dark-font-color {
   color: var(--dark) !important;
+}
+
+.dark-font-color-catalogador {
+  color: var(--dark) !important;
+}
+
+.dark-font-color-trendindicator-h5 {
+  color: var(--dark) !important; 
+}
+
+.dark-font-color-trendindicator-small {
+  color: var(--dark) !important; 
+}
+
+.dark-font-color-trendindicator-div {
+  color: var(--dark) !important; 
+}
+
+.border-light-color-trendindicator-div {
+  border: 1px solid var(--platinum) !important;
 }
 
 .--bs-form-select-bg-img {
