@@ -1,7 +1,3 @@
-/* form-control::placeholder {
-  color: black !important;
-} */
-
 select, select optgroup, select:active {
   color: #595c5f !important;
 }
