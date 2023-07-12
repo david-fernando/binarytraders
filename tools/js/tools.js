@@ -5,11 +5,6 @@ select.addEventListener("change", function () {
     const selectedOptions = select.selectedOptions;
     let previousValue = []
     let closeButton = null
-    const cryptoAssets = [
-        'BTCUSD',
-        'ETHUSD',
-        'LTCUSD'
-    ]
     for (let index = 0; index < selectedOptions.length; index++) {
         const value = selectedOptions[index].value;
         const item = document.createElement("div");
@@ -59,6 +54,7 @@ select.addEventListener("change", function () {
         removeOption()
         selectedItems.push(value);
     }
+    fetch('https://api.agbot.com.br/signal/v1/catalog').then(data => data).then(result => console.log(result))
 });
 
 $(document).ready(function () {
