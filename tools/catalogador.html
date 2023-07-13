@@ -308,15 +308,15 @@
               </div>
         
               <!-- Input para definir a precisão dos sinais -->
-              <div class="form-group">
+              <div class="form-group required-acurracy">
                 <label for="accuracy">Signals Accuracy</label>
-                <input id="accuracy" required type="number" min="60" max="100" placeholder="%" class="form-control">
+                <input id="accuracy" type="number" onChange="updateSignalAccuracy(event.target.value)" min="60" max="100" placeholder="%" class="form-control">
               </div>
         
               <!-- Input para definir os dias de catalogação -->
               <div class="form-group">
                 <label for="catalogDays">Cataloging Days</label>
-                <input class="form-control" type="number" min="1" max="30" id="catalogDays" type="text" placeholder="Days">
+                <input class="form-control" type="number" min="1" max="30" id="catalogDays" placeholder="Days">
               </div>
         
               <!-- Select para escolher o tipo de martingale -->
