@@ -133,9 +133,7 @@
                     <div class="form-content p-md-4 mx-2 pt-md-2 border-light-color">
                         <!-- Botão de ajuda -->
                         <div class="d-flex justify-content-end btn-popup-content">
-                            <button style="outline: none" type="button" class="btn p-0 mt-1 me-2 me-md-0"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
+                            <button type="button" class="btn p-0 mt-1 me-2 me-md-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <img src="img/question.svg" alt="Icon" height="20">
                             </button>
                         </div>
@@ -148,44 +146,45 @@
                             <div class="form-group mt-4 pt-md-2">
                                 <label for="timezone">UTC Timezone</label>
                                 <select name="timezone" class="form-select" id="timezone">
+                                    <option value="UTC-12:00">UTC-12:00</option>
                                     <option value="UTC-11:00">UTC-11:00</option>
-                                <option value="UTC-10:00">UTC-10:00</option>
-                                <option value="UTC-09:30">UTC-09:30</option>
-                                <option value="UTC-09:00">UTC-09:00</option>
-                                <option value="UTC-08:00">UTC-08:00</option>
-                                <option value="UTC-07:00">UTC-07:00</option>
-                                <option value="UTC-06:00">UTC-06:00</option>
-                                <option value="UTC-05:00">UTC-05:00</option>
-                                <option value="UTC-04:30">UTC-04:30</option>
-                                <option value="UTC-04:00">UTC-04:00</option>
-                                <option value="UTC-03:30">UTC-03:30</option>
-                                <option value="UTC-03:00" selected>UTC-03:00</option>
-                                <option value="UTC-02:00">UTC-02:00</option>
-                                <option value="UTC-01:00">UTC-01:00</option>
-                                <option value="UTC+00:00">UTC+00:00</option>
-                                <option value="UTC+01:00">UTC+01:00</option>
-                                <option value="UTC+02:00">UTC+02:00</option>
-                                <option value="UTC+03:00">UTC+03:00</option>
-                                <option value="UTC+03:30">UTC+03:30</option>
-                                <option value="UTC+04:00">UTC+04:00</option>
-                                <option value="UTC+04:30">UTC+04:30</option>
-                                <option value="UTC+05:00">UTC+05:00</option>
-                                <option value="UTC+05:30">UTC+05:30</option>
-                                <option value="UTC+05:45">UTC+05:45</option>
-                                <option value="UTC+06:00">UTC+06:00</option>
-                                <option value="UTC+06:30">UTC+06:30</option>
-                                <option value="UTC+07:00">UTC+07:00</option>
-                                <option value="UTC+08:00">UTC+08:00</option>
-                                <option value="UTC+08:45">UTC+08:45</option>
-                                <option value="UTC+09:00">UTC+09:00</option>
-                                <option value="UTC+09:30">UTC+09:30</option>
-                                <option value="UTC+10:00">UTC+10:00</option>
-                                <option value="UTC+10:30">UTC+10:30</option>
-                                <option value="UTC+11:00">UTC+11:00</option>
-                                <option value="UTC+12:00">UTC+12:00</option>
-                                <option value="UTC+12:45">UTC+12:45</option>
-                                <option value="UTC+13:00">UTC+13:00</option>
-                                <option value="UTC+14:00">UTC+14:00</option>
+                                    <option value="UTC-10:00">UTC-10:00</option>
+                                    <option value="UTC-09:30">UTC-09:30</option>
+                                    <option value="UTC-09:00">UTC-09:00</option>
+                                    <option value="UTC-08:00">UTC-08:00</option>
+                                    <option value="UTC-07:00">UTC-07:00</option>
+                                    <option value="UTC-06:00">UTC-06:00</option>
+                                    <option value="UTC-05:00">UTC-05:00</option>
+                                    <option value="UTC-04:30">UTC-04:30</option>
+                                    <option value="UTC-04:00">UTC-04:00</option>
+                                    <option value="UTC-03:30">UTC-03:30</option>
+                                    <option value="UTC-03:00" selected>UTC-03:00</option>
+                                    <option value="UTC-02:00">UTC-02:00</option>
+                                    <option value="UTC-01:00">UTC-01:00</option>
+                                    <option value="UTC+00:00">UTC+00:00</option>
+                                    <option value="UTC+01:00">UTC+01:00</option>
+                                    <option value="UTC+02:00">UTC+02:00</option>
+                                    <option value="UTC+03:00">UTC+03:00</option>
+                                    <option value="UTC+03:30">UTC+03:30</option>
+                                    <option value="UTC+04:00">UTC+04:00</option>
+                                    <option value="UTC+04:30">UTC+04:30</option>
+                                    <option value="UTC+05:00">UTC+05:00</option>
+                                    <option value="UTC+05:30">UTC+05:30</option>
+                                    <option value="UTC+05:45">UTC+05:45</option>
+                                    <option value="UTC+06:00">UTC+06:00</option>
+                                    <option value="UTC+06:30">UTC+06:30</option>
+                                    <option value="UTC+07:00">UTC+07:00</option>
+                                    <option value="UTC+08:00">UTC+08:00</option>
+                                    <option value="UTC+08:45">UTC+08:45</option>
+                                    <option value="UTC+09:00">UTC+09:00</option>
+                                    <option value="UTC+09:30">UTC+09:30</option>
+                                    <option value="UTC+10:00">UTC+10:00</option>
+                                    <option value="UTC+10:30">UTC+10:30</option>
+                                    <option value="UTC+11:00">UTC+11:00</option>
+                                    <option value="UTC+12:00">UTC+12:00</option>
+                                    <option value="UTC+12:45">UTC+12:45</option>
+                                    <option value="UTC+13:00">UTC+13:00</option>
+                                    <option value="UTC+14:00">UTC+14:00</option>
                                 </select>
                             </div>
     
@@ -218,27 +217,16 @@
                             <!-- Textarea para lista de verificação -->
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1">Checklist</label>
-                                <textarea class="form-control" placeholder="Paste the list to be checked"
-                                          id="exampleFormControlTextarea1" rows="6"></textarea>
+                                <textarea class="form-control" placeholder="Paste the list to be checked" id="exampleFormControlTextarea1" rows="6"></textarea>
                             </div>
     
                             <!-- Mensagens de sucesso e erro -->
                             <div class="msg-content" style="display: none">
                                 <div class="d-flex align-items-center sucess-msg rounded bg-success bg-opacity-10 py-1 px-3 my-2">
                                     <div class="loader loader--style2 me-1 mb-1" title="1">
-                                        <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg"
-                                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                             width="20px" height="20px" viewBox="0 0 50 50"
-                                             style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                                            <path fill="#000"
-                                                  d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
-                                                <animateTransform attributeType="xml"
-                                                                  attributeName="transform"
-                                                                  type="rotate"
-                                                                  from="0 25 25"
-                                                                  to="360 25 25"
-                                                                  dur="0.6s"
-                                                                  repeatCount="indefinite"/>
+                                        <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                            <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+                                                <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/>
                                             </path>
                                         </svg>
                                     </div>
@@ -250,12 +238,9 @@
                             </div>
     
                             <!-- Botão para iniciar verificação -->
-                            <div style="margin-bottom: -6px;" class="text-center mt-4">
-                                <button 
-                                  type="button"
-                                  class="btn px-4 d-inline-flex align-items-center btn-outline-secondary catalog-button"
-                                >
-                                  <strong class="catalog-button-text">Check</strong>
+                            <div class="text-center mt-4">
+                                <button type="button" class="btn px-4 d-inline-flex align-items-center btn-outline-secondary catalog-button">
+                                    <strong class="catalog-button-text">Check</strong>
                                 </button>
                             </div>
                         </form>
