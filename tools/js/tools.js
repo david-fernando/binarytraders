@@ -32,7 +32,7 @@ select.addEventListener("change", function () {
                 return item.remove();
             }
             item.classList.add("selected-item");
-            item.textContent = value;
+            item.textContent = value?.replace('-BT', '');
             closeButton = document.createElement("span");
             closeButton.textContent = "X";
         }
