@@ -8,6 +8,7 @@ const catalogDays = document.getElementById("catalogDays");
 const martingaleSelect = document.getElementById("martingale-select");
 const catalogButton = document.querySelector('.catalog-button')
 const selectedPairs = [];
+let accuracy = null
 
 select.addEventListener("change", () => {
     let previousValue = []
@@ -64,15 +65,33 @@ select.addEventListener("change", () => {
     }
 });
 
+const updateSignalAccuracy = (value) => {
+    accuracy = parseInt(value)
+}
+
 catalogButton.addEventListener('click', () => {
     const timezone = timezoneSelect.value
     const direction = directionSelect.value
     const timeframe = parseInt(timeframeSelect.value)
     const today = (daylistSelect.value === 'false')? false : true
-    const accuracy = parseInt(accuracyInput.value)
     const chosenCatalogDays = parseInt(catalogDays.value)
     const martingaleSelected = parseInt(martingaleSelect.value)
     const pairs = selectedPairs.map((pair) => (pair.includes('-BT'))? pair.replace('-BT', '') : pair)
+    const isAccuracyEmpty = accuracy === null
+    const isAccuracyRequired = accuracyInput.classList.contains('required-input')
+    const requiredAcurracy = document.querySelector('.required-acurracy')
+    
+    if(isAccuracyEmpty){
+        accuracyInput.classList.add('required-input')
+        return requiredAcurracy.innerHTML += '<small class="warning">This field is required!</small>'
+    }
+
+    if(isAccuracyRequired){
+        accuracyInput.classList.remove('required-input')
+        requiredAcurracy.innerHTML = `<label for="accuracy">Signals Accuracy</label>
+        <input id="accuracy" type="number" onChange="updateSignalAccuracy(event.target.value)" min="60" max="100" placeholder="%" class="form-control">`
+    }
+
     const url = 'https://api.agbot.com.br/signal/v1/api/catalog'
     const headers = { 'Accept': 'application/json', 'Content-Type': 'application/json'}
     const json = {
