@@ -127,6 +127,15 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   color: #fff;
 }
 
+.required-input {
+  border-color: var(--burning-orange) !important;
+}
+
+.warning {
+  color: var(--burning-orange);
+  font-weight: bold;
+}
+
 .catalog-modal-container {
   width: 100%;
   height: 100%;
