@@ -7,4 +7,5 @@ function loadHTML(file, elementId) {
     });
 }
 
-loadHTML('trendindicator.html', 'trend-indicator');
+// loadHTML('trendindicator.html', 'trend-indicator');
+// loadHTML('trendindicatormobile.html', 'trend-indicator-mobile');
