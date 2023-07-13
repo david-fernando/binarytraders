@@ -3,6 +3,12 @@ html {
   --mid-gray: #595c5f;
   --silver: #c4cdd5;
   --platinum: #dee2e6;
+  --burning-orange: #ff7a27
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
@@ -113,10 +119,18 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
 }
 
 .btn-outline-secondary:hover{
-  background-color: #ff7a27;
-  border-color: #ff7a27 !important;
+  background-color: var(--burning-orange);
+  border-color: var(--burning-orange) !important;
 }
 
 .btn-outline-secondary:hover > strong {
   color: #fff;
+}
+
+.catalog-modal-container {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  z-index: 100;
 }
