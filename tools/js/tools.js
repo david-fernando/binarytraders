@@ -9,6 +9,7 @@ const martingaleSelect = document.getElementById("martingale-select");
 const catalogButton = document.querySelector('.catalog-button')
 const selectedPairs = [];
 let accuracy = null
+let chosenCatalogDays = null
 
 select.addEventListener("change", () => {
     let previousValue = []
@@ -31,7 +32,7 @@ select.addEventListener("change", () => {
             const isAllAssets = currentValue === 'All Assets'
             const includeOTC = currentValue.includes('-OTC')
 
-            if(includeAllOTC || includeAllAssets || isOTC || isAllAssets || (includeOTC && includeCrypto) || (isCrypto && !includeCrypto)){
+            if(includeAllOTC || includeAllAssets || isOTC || isAllAssets || (includeOTC && includeCrypto) || (isCrypto && !includeOTC)){
                 selectedPairs.splice(index, 1);
                 selectedItem.forEach((item) => {
                     item.remove()
@@ -69,27 +70,44 @@ const updateSignalAccuracy = (value) => {
     accuracy = parseInt(value)
 }
 
+const updateSignalCatalogDays = (value) => {
+    chosenCatalogDays = parseInt(value)
+}
+
 catalogButton.addEventListener('click', () => {
     const timezone = timezoneSelect.value
     const direction = directionSelect.value
     const timeframe = parseInt(timeframeSelect.value)
     const today = (daylistSelect.value === 'false')? false : true
-    const chosenCatalogDays = parseInt(catalogDays.value)
     const martingaleSelected = parseInt(martingaleSelect.value)
     const pairs = selectedPairs.map((pair) => (pair.includes('-BT'))? pair.replace('-BT', '') : pair)
     const isAccuracyEmpty = accuracy === null
+    const isCatalogDaysEmpty = chosenCatalogDays === null
     const isAccuracyRequired = accuracyInput.classList.contains('required-input')
+    const isCatalogDaysRequired = catalogDays.classList.contains('required-input')
     const requiredAcurracy = document.querySelector('.required-acurracy')
+    const requiredCatalogDays = document.querySelector('.required-gatalog-day')
     
     if(isAccuracyEmpty){
         accuracyInput.classList.add('required-input')
         return requiredAcurracy.innerHTML += '<small class="warning">This field is required!</small>'
     }
 
+    if(isCatalogDaysEmpty){
+        catalogDays.classList.add('required-input')
+        return requiredCatalogDays.innerHTML += '<small class="warning">This field is required!</small>'
+    }
+
     if(isAccuracyRequired){
         accuracyInput.classList.remove('required-input')
         requiredAcurracy.innerHTML = `<label for="accuracy">Signals Accuracy</label>
         <input id="accuracy" type="number" onChange="updateSignalAccuracy(event.target.value)" min="60" max="100" placeholder="%" class="form-control">`
+    }
+
+    if(isCatalogDaysRequired){
+        catalogDays.classList.remove('required-input')
+        requiredCatalogDays.innerHTML = `<label for="catalogDays">Cataloging Days</label>
+        <input class="form-control" type="number" min="1" max="30" onChange="updateSignalCatalogDays(event.target.value)" id="catalogDays" placeholder="Days">`
     }
 
     const url = 'https://api.agbot.com.br/signal/v1/api/catalog'
