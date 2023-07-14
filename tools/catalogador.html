@@ -314,9 +314,9 @@
               </div>
         
               <!-- Input para definir os dias de catalogação -->
-              <div class="form-group">
+              <div class="form-group required-gatalog-day">
                 <label for="catalogDays">Cataloging Days</label>
-                <input class="form-control" type="number" min="1" max="30" id="catalogDays" placeholder="Days">
+                <input class="form-control" type="number" min="1" max="30" onChange="updateSignalCatalogDays(event.target.value)" id="catalogDays" placeholder="Days">
               </div>
         
               <!-- Select para escolher o tipo de martingale -->
