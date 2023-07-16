@@ -217,7 +217,7 @@ function showResult(){
   const tableField = document.querySelector('#table-field')
 
   result.map((item) => {
-        const field = `<tr>
+    const field = `<tr>
         <th scope="row">
         <div class="form-check">
           <input class="form-check-input checkbox-option" onChange="handleCheckbox()" type="checkbox" value="" id="flexCheckIndeterminate">
