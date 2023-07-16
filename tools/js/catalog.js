@@ -301,7 +301,3 @@ HTMLElement.prototype.addChildren = function(html){
     const dom = new DOMParser().parseFromString('<template>'+html+'</template>', 'text/html').head;
     this.appendChild(dom.firstElementChild.content);
 }
-
-
-
-
