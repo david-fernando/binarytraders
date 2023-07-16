@@ -7,10 +7,11 @@ const accuracyInput = document.getElementById("accuracy");
 const catalogDays = document.getElementById("catalogDays");
 const martingaleSelect = document.getElementById("martingale-select");
 const catalogButton = document.querySelector('.catalog-button')
-const tableHeader = document.querySelector('#table-header')
-const selectCheckbox = document.querySelector('.select-checkbox')
-const checkboxOption = document.querySelectorAll('.checkbox-option')
+// const tableHeader = document.querySelector('#table-header')
+// const selectCheckbox = document.querySelector('.select-checkbox')
+// const checkboxOption = document.querySelectorAll('.checkbox-option')
 const selectedPairs = [];
+let result = []
 let accuracy = null
 let chosenCatalogDays = null
 
@@ -118,7 +119,7 @@ const updateSignalCatalogDays = (value) => {
     chosenCatalogDays = parseInt(value)
 }
 
-catalogButton.addEventListener('click', () => {
+catalogButton.addEventListener('click', async() => {
     getAllAssets()
     const timezone = timezoneSelect.value
     const direction = directionSelect.value
@@ -172,24 +173,76 @@ catalogButton.addEventListener('click', () => {
         try {
             const response = await fetch(url, { method: 'POST', headers, body: JSON.stringify(json)})
             const data = await response.json()
-            console.log(data.signals)
+            result = [...data.signals]
+            console.log(result)
         } catch (error) {
             console.log(error)
         }
     }
 
-    fetchCatalog()
+    await fetchCatalog()
+    showResult()
 })
 
+function showResult(){
+    const tableContainer = document.querySelector('.table-container')
+    tableContainer.classList.add('border-light-color')
+    const timeframe = parseInt(timeframeSelect.value)
+
+    const content = `<header id="table-header">
+    <div class="form-check">
+      <input class="form-check-input select-checkbox" onChange="handleAllCheckbox()" type="checkbox" value="" id="flexCheckIndeterminate">
+    </div>
+  </header>
+  <div class="table-area mt-5">
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Data</th>
+            <th scope="col">Ativo</th>
+            <th scope="col">Direção</th>
+            <th scope="col">Timeframe</th>
+          </tr>
+      </thead>
+      <tbody id="table-field">
+
+      </tbody>
+
+    </table>
+  </div>
+  <small>Total de sinais: 105</small>`
+
+  tableContainer.addChildren(content)
+  const tableField = document.querySelector('#table-field')
+
+  result.map((item) => {
+        const field = `<tr>
+        <th scope="row">
+        <div class="form-check">
+          <input class="form-check-input checkbox-option" onChange="handleCheckbox()" type="checkbox" value="" id="flexCheckIndeterminate">
+        </div>
+      </th>
+      <td>13/07/23</td>
+      <td>${item[0]}</td>
+      <td>${item[3]}</td>
+      <td>${timeframe}M</td>
+    </tr>`
+    tableField.addChildren(field)
+  })
+}
+
 function handleCheckbox() {
+    const selectCheckbox = document.querySelector('.select-checkbox')
     const isSelectAllCheckbox = selectCheckbox.classList.contains('select-all-checkbox')
+    const checkboxOption = document.querySelectorAll('.checkbox-option')
     const isThereaMarkedCheckbox = [...checkboxOption].some(item => item.checked === true)
     if(isSelectAllCheckbox && !isThereaMarkedCheckbox){
         selectCheckbox.removeAttribute('checked')
         selectCheckbox.classList.remove('select-all-checkbox')
         return removeHeaderButton()
     }
-    if(!isSelectAllCheckbox){
+    if(isThereaMarkedCheckbox){
         selectCheckbox.setAttribute('checked', 'true')
         selectCheckbox.classList.add('select-all-checkbox')
         addHeaderButton()
@@ -197,6 +250,8 @@ function handleCheckbox() {
 }
 
 function handleAllCheckbox() {
+    const selectCheckbox = document.querySelector('.select-checkbox')
+    const checkboxOption = document.querySelectorAll('.checkbox-option')
     const isThereaMarkedCheckbox = [...checkboxOption].some(item => item.checked === true)
     const selectAllCheckbox = () => {
         selectCheckbox.setAttribute('checked', 'true')
@@ -217,6 +272,7 @@ function handleAllCheckbox() {
 }
 
 const addHeaderButton = () => {
+    const tableHeader = document.querySelector('#table-header')
     const buttons = `<button class="delete-button">
     <svg class="bi bi-trash delete-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="currentColor" viewBox="0 0 16 16">
       <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
@@ -230,17 +286,18 @@ const addHeaderButton = () => {
     </svg>
   </button>`
 
-  tableHeader.htmlContent(buttons)
+  tableHeader.addChildren(buttons)
 }
 
 const removeHeaderButton = () => {
+    const tableHeader = document.querySelector('#table-header')
     const deleteButton = document.querySelector('.delete-button')
     const copyButton = document.querySelector('.copy-button')
     tableHeader.removeChild(deleteButton);
     tableHeader.removeChild(copyButton);
 }
 
-HTMLElement.prototype.htmlContent = function(html){
+HTMLElement.prototype.addChildren = function(html){
     const dom = new DOMParser().parseFromString('<template>'+html+'</template>', 'text/html').head;
     this.appendChild(dom.firstElementChild.content);
 }
