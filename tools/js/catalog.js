@@ -211,7 +211,7 @@ function showResult(){
 
     </table>
   </div>
-  <small>Total de sinais: 105</small>`
+  <small>Total de sinais: ${result.length}</small>`
 
   tableContainer.addChildren(content)
   const tableField = document.querySelector('#table-field')

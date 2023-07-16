@@ -1,0 +1,87 @@
+select, select optgroup, select:active {
+  color: #595c5f !important;
+}
+
+label, .description, .catalog-button-text {
+  font-size: 15px !important;
+}
+
+.nav-link.active > p {
+  font-size: 16px;
+}
+
+*, input::placeholder {
+  letter-spacing: -.02rem;
+}
+
+h3, .font-weight-500 {
+  font-weight: 500;
+}
+
+.description {
+  color: #595c5f;
+}
+
+.catalog-button-text {
+  font-weight: 500 !important;
+  color: #595c5f;
+}
+
+.catalog-button {
+  gap: 6px;
+  border: 1px solid #c4cdd5 !important;
+}
+
+.light-font-color {
+  color: #595c5f !important
+}
+
+.border-light-color {
+  border: 1px solid #dee2e6 !important;
+}
+
+.dark-font-color {
+  color: #212b36 !important;
+}
+
+.--bs-form-select-bg-img {
+  font-size: 16px !important;
+}
+
+label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
+  color: #212b36 !important;
+}
+
+.form-select, .form-control {
+  line-height: 1.5rem !important;
+}
+
+.form-select, input {
+  border-color: #dee2e6 !important;
+}
+
+.form-select {
+  --bs-form-select-bg-img: url('../img/selectIcon.svg') !important;
+}
+
+.form-select, input::placeholder, input::-ms-value {
+  font-size: 14px;
+}
+
+.selected-items {
+  border-top: 1px solid #dee2e6;
+}
+
+.currency-content {
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem !important;
+}
+
+.btn-outline-secondary:hover{
+  background-color: #ff7a27;
+  border-color: #ff7a27 !important;
+}
+
+.btn-outline-secondary:hover > strong {
+  color: #fff;
+}
