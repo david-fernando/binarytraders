@@ -176,6 +176,18 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   gap: 8.2px;
 }
 
+@media (max-width: 700px) {
+  .table-container > header {
+    position: absolute !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .table-container {
+    font-size: 12px !important;
+  }
+}
+
 .table-container > .table-area {
   max-height: 377.6px;
   overflow-y: scroll;
