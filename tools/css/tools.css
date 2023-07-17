@@ -139,11 +139,19 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   font-weight: bold;
 }
 
+.content-column {
+  max-width: 514.06px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .table-container {
   max-width: 514.06px;
+  min-width: 97%;
   position: relative;
-  left: 8px;
-  top: 48px;
   padding-bottom: 24px;
   display: flex;
   flex-direction: column;
