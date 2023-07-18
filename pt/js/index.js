@@ -68,8 +68,6 @@ function changeTab(itemNumber) {
 }
 
 function loadLazyImages(){
-  const bannerLazy = document.querySelector('.banner-lazy')
-  const bannerMobileLazy = document.querySelector('.banner-mobile-lazy')
   const desktopIcons = document.querySelectorAll('.desktop-icon')
   const mobileIcons = document.querySelectorAll('.mobile-icon')
   
@@ -78,14 +76,11 @@ function loadLazyImages(){
   const isMobile = windowWidth <= 1006
 
   if(isMobile){
-    bannerMobileLazy.src = bannerMobileLazy.dataset.src
     mobileIcons.forEach((image) => {
       image.src = image.dataset.src
     })
     return;
   }
-
-  bannerLazy.src = bannerLazy.dataset.src
 
   desktopIcons.forEach((image) => {
     image.src = image.dataset.src
