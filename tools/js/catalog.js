@@ -181,6 +181,10 @@ catalogButton.addEventListener('click', async() => {
     }
 
     await fetchCatalog()
+    const isResultEmpty = result.length === 0
+    if(isResultEmpty){
+        return showAlert('information')
+    }
     showResult()
 })
 
@@ -192,6 +196,18 @@ const returnCurrentDate = () => {
   
   return `${day}/${month}/${year}`;
 };
+
+function showAlert(type){
+    const body = document.querySelector('body')
+    const alert = {
+        information: `<div class="alert alert-info" role="alert">
+        <p>Nenhum sinal encontrado!</p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>`
+    }
+
+    body.addChildren(alert[type])
+}
 
 function showResult(){
     const tableContainer = document.querySelector('.table-container')
