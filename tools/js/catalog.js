@@ -229,9 +229,7 @@ function showResult(){
   result.map((item, index) => {
     const field = `<tr class="line-data" data-checked="false">
         <th scope="row">
-        <div class="form-check">
           <input class="form-check-input checkbox-option" onChange="handleCheckbox(${index})" type="checkbox" value="" id="flexCheckIndeterminate">
-        </div>
       </th>
       <td>${currentDate}</td>
       <td>${item[0]}</td>
