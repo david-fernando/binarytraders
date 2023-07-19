@@ -176,6 +176,15 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   gap: 8.2px;
 }
 
+.alert {
+  display: flex;
+  align-self: baseline;
+  position: fixed !important;
+  top: 86.5%;
+  gap: 0.5rem;
+  height: 3.623rem;
+}
+
 td {
   font-size: 14.5px !important;
 }
