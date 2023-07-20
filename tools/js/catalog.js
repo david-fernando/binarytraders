@@ -347,7 +347,7 @@ function copyItems(){
     let data = ''
     let text =
     `Mercado: Normal
-Timeframe: ${timeframe}
+Timeframe: M${timeframe}
 Direção: ${direction}
 Martingale: G${martingaleSelected}
 Quantidade de dias: ${chosenCatalogDays}
