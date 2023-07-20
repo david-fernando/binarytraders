@@ -133,6 +133,7 @@ catalogButton.addEventListener('click', async() => {
     const isCatalogDaysRequired = catalogDays.classList.contains('required-input')
     const requiredAcurracy = document.querySelector('.required-acurracy')
     const requiredCatalogDays = document.querySelector('.required-gatalog-day')
+    let isConnectionError = false
 
     if(isAccuracyEmpty){
         accuracyInput.classList.add('required-input')
@@ -176,14 +177,18 @@ catalogButton.addEventListener('click', async() => {
             result = [...data.signals]
             console.log(result)
         } catch (error) {
-            console.log(error)
+            isConnectionError = true
+            return showAlert('danger')
         }
     }
 
     await fetchCatalog()
     const isResultEmpty = result.length === 0
-    if(isResultEmpty){
+    if(isResultEmpty && !isConnectionError){
         return showAlert('information')
+    }
+    if(isConnectionError){
+        return;
     }
     showResult()
 })
@@ -203,7 +208,11 @@ function showAlert(type){
         information: `<div class="alert alert-info" role="alert">
         <p>Nenhum sinal encontrado!</p>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>`
+      </div>`,
+      danger: `<div class="alert alert-danger" role="alert">
+      <p>Não foi possível conectar</p>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>`
     }
 
     body.addChildren(alert[type])
