@@ -22,8 +22,8 @@ select, select optgroup, select:active {
   color: var(--mid-gray) !important;
 }
 
-label, .description, .catalog-button-text {
-  font-size: 15px !important;
+label, .description, .catalog-button-text, td {
+  font-size: 14.5px !important;
 }
 
 .nav-link.active > p {
@@ -183,10 +183,6 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   top: 86.5%;
   gap: 0.5rem;
   height: 3.623rem;
-}
-
-td {
-  font-size: 14.5px !important;
 }
 
 @media (max-width: 979px) {
