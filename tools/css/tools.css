@@ -189,6 +189,12 @@ td {
   font-size: 14.5px !important;
 }
 
+@media (max-width: 979px) {
+  .alert {
+    align-self: center;
+  }
+}
+
 @media (max-width: 700px) {
   .table-container > header {
     position: absolute !important;
