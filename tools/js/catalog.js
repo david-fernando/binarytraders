@@ -181,7 +181,7 @@ catalogButton.addEventListener('click', async() => {
             const response = await fetch(url, { method: 'POST', headers, body: JSON.stringify(json)})
             const data = await response.json()
             result = [...data.signals]
-        } catch (error) {
+        } catch {
             isConnectionError = true
             return showAlert('danger')
         }
