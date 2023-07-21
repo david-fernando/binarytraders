@@ -133,6 +133,7 @@ catalogButton.addEventListener('click', async() => {
     const tableContainer = document.querySelector('.table-container')
     let isConnectionError = false
     catalogButton.classList.add('disabled')
+    catalogButton.innerText = 'Loading'
 
     if(isAccuracyEmpty){
         accuracyInput.classList.add('required-input')
@@ -197,6 +198,7 @@ catalogButton.addEventListener('click', async() => {
     }
     showResult()
     catalogButton.classList.remove('disabled')
+    catalogButton.innerText = 'Catalog'
 })
 
 const returnCurrentDate = () => {
@@ -212,15 +214,15 @@ function showAlert(type){
     const body = document.querySelector('body')
     const alert = {
         information: `<div class="alert alert-info" role="alert">
-        <p>Nenhum sinal encontrado!</p>
+        <p>No signal found!</p>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>`,
       danger: `<div class="alert alert-danger" role="alert">
-      <p>Não foi possível conectar!</p>
+      <p>It was not possible to connect!</p>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>`,
     successCopied: `<div class="alert alert-success" role="alert">
-    <p>Copiado!</p>
+    <p>Copied!</p>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>`
     }
@@ -236,7 +238,7 @@ function showResult(){
 
     const content = `<header id="table-header">
     <div class="form-check">
-      <input class="form-check-input select-checkbox" title="Selecionar todos" onChange="handleAllCheckbox()" type="checkbox" value="" id="flexCheckIndeterminate">
+      <input class="form-check-input select-checkbox" title="Check/Uncheck all" onChange="handleAllCheckbox()" type="checkbox" value="" id="flexCheckIndeterminate">
     </div>
   </header>
   <div class="table-area mt-5">
@@ -244,9 +246,9 @@ function showResult(){
       <thead>
           <tr>
             <th scope="col"></th>
-            <th scope="col">Data</th>
-            <th scope="col">Ativo</th>
-            <th scope="col">Direção</th>
+            <th scope="col">Date</th>
+            <th scope="col">Asset</th>
+            <th scope="col">Direction</th>
             <th scope="col">Timeframe</th>
           </tr>
       </thead>
@@ -256,7 +258,7 @@ function showResult(){
 
     </table>
   </div>
-  <small>Total de sinais: ${result.length}</small>`
+  <small>Total signs: ${result.length}</small>`
 
   tableContainer.addChildren(content)
   const tableField = document.querySelector('#table-field')
@@ -264,7 +266,7 @@ function showResult(){
   result.map((item, index) => {
     const field = `<tr class="line-data" data-checked="false">
         <th scope="row">
-          <input class="form-check-input checkbox-option" title="Selecionar" onChange="handleCheckbox(${index})" type="checkbox" value="" id="flexCheckIndeterminate">
+          <input class="form-check-input checkbox-option" title="Check" onChange="handleCheckbox(${index})" type="checkbox" value="" id="flexCheckIndeterminate">
       </th>
       <td>${currentDate}</td>
       <td>${item[0]}</td>
@@ -344,14 +346,16 @@ function copyItems(){
     const direction = directionSelect.value
     const timeframe = parseInt(timeframeSelect.value)
     const martingaleSelected = parseInt(martingaleSelect.value)
+    const isPairOTC = selectedPairs.every(value => value.includes('-OTC'))
+    const market = (isPairOTC)? 'OTC Market': 'Normal'
     let data = ''
     let text =
-    `Mercado: Normal
+    `Market: ${market}
 Timeframe: M${timeframe}
-Direção: ${direction}
+Direction: ${direction}
 Martingale: G${martingaleSelected}
-Quantidade de dias: ${chosenCatalogDays}
-Porcentagem: ${accuracy}%`
+Number of days: ${chosenCatalogDays}
+Percentage: ${accuracy}%`
 
     lineData.forEach((item) => {
         const column = item.querySelectorAll('td')
@@ -366,7 +370,7 @@ Porcentagem: ${accuracy}%`
     })
 
     text +=`\nBinaryTraders.net`
-    text +=`\nFerramentas para o mercado de opções binárias.`
+    text +=`\nTools for the binary options market.`
 
     navigator.clipboard.writeText(text);
     showAlert('successCopied') 
@@ -374,13 +378,13 @@ Porcentagem: ${accuracy}%`
 
 const addHeaderButton = () => {
     const tableHeader = document.querySelector('#table-header')
-    const buttons = `<button class="delete-button" title="Excluir" onClick="removeSelectedItem()">
+    const buttons = `<button class="delete-button" title="Delete" onClick="removeSelectedItem()">
     <svg class="bi bi-trash delete-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="currentColor" viewBox="0 0 16 16">
       <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
       <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
     </svg>
   </button>
-  <button class="copy-button" title="Copiar" onClick="copyItems()">
+  <button class="copy-button" title="Copy" onClick="copyItems()">
     <svg class="bi bi-clipboard I-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="currentColor" viewBox="0 0 16 16">
       <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
       <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
