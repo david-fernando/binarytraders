@@ -167,6 +167,7 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   align-self: flex-end;
   position: relative;
   right: 32px;
+  top: 0.3rem;
 }
 
 .table-container > header {
