@@ -126,6 +126,10 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   border-color: var(--burning-orange) !important;
 }
 
+.form-content {
+  max-width: 100% !important;
+}
+
 .btn-outline-secondary:hover > strong {
   color: #fff !important;
 }
