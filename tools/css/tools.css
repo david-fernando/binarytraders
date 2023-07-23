@@ -249,12 +249,12 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
 
 .delete-icon {
   position: relative;
-  bottom: 1.5px;
+  bottom: 1.3px;
 }
 
 .copy-icon {
   position: relative;
-  bottom: 2.2px;
+  bottom: 2px;
 }
 
 .catalog-modal-container {
