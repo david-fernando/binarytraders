@@ -236,6 +236,8 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   width: min-content;
   height: min-content;
   padding: 0px;
+  position: relative;
+  top: 0.1px;
 }
 
 .table-container > header > .form-check {
