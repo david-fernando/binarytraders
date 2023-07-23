@@ -329,6 +329,7 @@ function handleAllCheckbox() {
 function removeSelectedItem(){
     const lineData = [...document.querySelectorAll('.line-data')]
     const selectCheckbox = document.querySelector('.select-checkbox')
+    const tableContainer = document.querySelector('.table-container')
     lineData.forEach((item) => {
         const isMarked = (item.dataset.checked === 'true')? true : false
         if(isMarked){
@@ -338,6 +339,8 @@ function removeSelectedItem(){
     selectCheckbox.removeAttribute('checked')
     selectCheckbox.classList.remove('select-all-checkbox')
     removeHeaderButton()
+    tableContainer.innerHTML = ''
+    tableContainer.classList.remove('border-light-color')
 }
 
 function copyItems(){
