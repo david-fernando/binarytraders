@@ -121,8 +121,8 @@ label, .nav-link.active > p, .d-flex > .pb-3, .d-flex > small, form.px-5 > h3 {
   border-radius: 0.375rem !important;
 }
 
-.btn-outline-secondary:hover{
-  background-color: var(--burning-orange);
+.btn-outline-secondary:hover, .btn-outline-secondary:active{
+  background-color: var(--burning-orange) !important;
   border-color: var(--burning-orange) !important;
 }
 
