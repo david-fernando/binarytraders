@@ -351,7 +351,7 @@ function copyItems(){
     const martingaleSelected = parseInt(martingaleSelect.value)
     const isPairOTC = selectedPairs.every(value => value.includes('-OTC'))
     const selectCheckbox = document.querySelector('.select-checkbox')
-    const checkboxOption = document.querySelector('.checkbox-option')
+    const checkboxOption = document.querySelectorAll('.checkbox-option')
     const market = (isPairOTC)? 'OTC Market': 'Normal'
     let data = ''
     let text =
@@ -379,9 +379,10 @@ Percentage: ${accuracy}%`
 
     navigator.clipboard.writeText(text);
     showAlert('successCopied')
-    selectCheckbox.removeAttribute('checked')
-    checkboxOption.removeAttribute('checked')
+    selectCheckbox.checked = false
     selectCheckbox.classList.remove('select-all-checkbox')
+    checkboxOption.forEach(item => item.checked = false)
+    removeHeaderButton()
 }
 
 const addHeaderButton = () => {
