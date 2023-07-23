@@ -161,8 +161,7 @@ catalogButton.addEventListener('click', async() => {
         tableContainer.classList.remove('border-light-color')
     }
 
-    catalogButton.classList.add('disabled')
-    catalogButton.innerText = 'Loading'
+    disableTheCatalogButton()
 
     const url = 'https://api.agbot.com.br/signal/v1/api/catalog'
     const headers = { 'Accept': 'application/json', 'Content-Type': 'application/json'}
@@ -184,21 +183,23 @@ catalogButton.addEventListener('click', async() => {
             result = [...data.signals]
         } catch {
             isConnectionError = true
-            return showAlert('danger')
+            showAlert('danger')
+            removeAlert()
+            return enableTheCatalogButton()
         }
     }
 
     await fetchCatalog()
     const isResultEmpty = result.length === 0
     if(isResultEmpty && !isConnectionError){
-        return showAlert('information')
+        showAlert('information')
+        return removeAlert()
     }
     if(isConnectionError){
         return;
     }
     showResult()
-    catalogButton.classList.remove('disabled')
-    catalogButton.innerText = 'Catalog'
+    enableTheCatalogButton()
 })
 
 const returnCurrentDate = () => {
@@ -215,15 +216,12 @@ function showAlert(type){
     const alert = {
         information: `<div class="alert alert-info" role="alert">
         <p>No signal found!</p>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>`,
       danger: `<div class="alert alert-danger" role="alert">
       <p>It was not possible to connect!</p>
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>`,
     successCopied: `<div class="alert alert-success" role="alert">
     <p>Copied!</p>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>`
     }
 
@@ -383,6 +381,7 @@ Percentage: ${accuracy}%`
     selectCheckbox.classList.remove('select-all-checkbox')
     checkboxOption.forEach(item => item.checked = false)
     removeHeaderButton()
+    removeAlert()
 }
 
 const addHeaderButton = () => {
@@ -409,6 +408,23 @@ const removeHeaderButton = () => {
     const copyButton = document.querySelector('.copy-button')
     tableHeader.removeChild(deleteButton);
     tableHeader.removeChild(copyButton);
+}
+
+const enableTheCatalogButton = () => {
+    catalogButton.classList.remove('disabled')
+    catalogButton.innerText = 'Catalog'
+}
+
+const disableTheCatalogButton = () => {
+    catalogButton.classList.add('disabled')
+    catalogButton.innerText = 'Loading'
+}
+
+const removeAlert = () => {
+    const alert = document.querySelector('.alert')
+    const oneSecondAndaHalf = 1500
+
+    setTimeout(() => alert.parentNode.removeChild(alert), oneSecondAndaHalf)
 }
 
 HTMLElement.prototype.addChildren = function(html){
