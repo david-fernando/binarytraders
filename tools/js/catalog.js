@@ -193,7 +193,8 @@ catalogButton.addEventListener('click', async() => {
     const isResultEmpty = result.length === 0
     if(isResultEmpty && !isConnectionError){
         showAlert('information')
-        return removeAlert()
+        removeAlert()
+        return enableTheCatalogButton()
     }
     if(isConnectionError){
         return;
@@ -206,9 +207,8 @@ const returnCurrentDate = () => {
   const date = new Date()
   const day = String(date.getDate()).padStart(2, '0');
   const month = String(date.getMonth() + 1).padStart(2, '0');
-  const year = String(date.getFullYear()).slice(-2);
   
-  return `${day}/${month}/${year}`;
+  return `${day}/${month}`;
 };
 
 function showAlert(type){
@@ -246,6 +246,7 @@ function showResult(){
             <th scope="col"></th>
             <th scope="col">Date</th>
             <th scope="col">Asset</th>
+            <th scope="col">Hour</th>
             <th scope="col">Direction</th>
             <th scope="col">Timeframe</th>
           </tr>
@@ -266,13 +267,19 @@ function showResult(){
     const assets = item[0].replace(regex, (_, threeLetters, restOfWord) => {
         return threeLetters + '/' + restOfWord;
     });
+    const splitHour = item[2].split(':')
+    const hour = splitHour[0]
+    const minute = splitHour[1]
+    const time = `${hour}:${minute}`
+    const direction = item[3]
     const field = `<tr class="line-data" data-checked="false">
         <th scope="row">
           <input class="form-check-input checkbox-option" title="Check" onChange="handleCheckbox(${index})" type="checkbox" value="" id="flexCheckIndeterminate">
       </th>
       <td>${currentDate}</td>
       <td>${assets}</td>
-      <td>${item[3]}</td>
+      <td>${time}</td>
+      <td>${direction}</td>
       <td>${timeframe}M</td>
     </tr>`
     tableField.addChildren(field)
