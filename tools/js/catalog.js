@@ -262,12 +262,19 @@ function showResult(){
   const tableField = document.querySelector('#table-field')
 
   result.map((item, index) => {
+    const regex = /\b(\w{3})(\w*)/g;
+    const assets = item[0].replace(regex, (_, threeLetters, restOfWord) => {
+        return threeLetters + '/' + restOfWord;
+    });
+    // const splitAssets = item[3].split(regex)
+    // console.log(splitAssets)
+    // const assets = `${splitAssets[0]}/${splitAssets[1]}`
     const field = `<tr class="line-data" data-checked="false">
         <th scope="row">
           <input class="form-check-input checkbox-option" title="Check" onChange="handleCheckbox(${index})" type="checkbox" value="" id="flexCheckIndeterminate">
       </th>
       <td>${currentDate}</td>
-      <td>${item[0]}</td>
+      <td>${assets}</td>
       <td>${item[3]}</td>
       <td>${timeframe}M</td>
     </tr>`
